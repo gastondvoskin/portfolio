@@ -1,8 +1,11 @@
+import Navbar from "./components/Navbar"
+import About from "./sections/About"
 
 function App() {
   return (
     <div>
-      Portfolio
+      <Navbar/>
+      <About/>
     </div>
   )
 }
