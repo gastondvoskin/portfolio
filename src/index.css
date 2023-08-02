@@ -1,12 +1,9 @@
-body{
-    background-color: var(--myBlack);
-    color: var(--myWhite)
-    
+body {
+  background-color: var(--myBlack);
+  color: var(--myWhite);
 }
 :root {
-    --myBlack: black;
-    --myWhite: white;
-    --fontFamily: "Poppins", sans-serif;
-  }
-
-  
+  --myBlack: black;
+  --myWhite: white;
+  --fontFamily: "Poppins", sans-serif;
+}
