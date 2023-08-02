@@ -1,4 +1,4 @@
-const dataProjects = [
+const dataRovalettiProjects = [
   {
     name: "Vianda express",
     description:
@@ -58,4 +58,4 @@ const dataProjects = [
   },
 ];
 
-export { dataProjects };
+export { dataRovalettiProjects };

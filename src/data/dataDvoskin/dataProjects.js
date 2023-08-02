@@ -1,4 +1,4 @@
-const dataProjects = [
+const dataDvoskinProjects = [
   {
     name: "Vianda express",
     description:
@@ -33,7 +33,6 @@ const dataProjects = [
       "https://www.youtube.com/watch?v=9LU6qFour2M&ab_channel=SilvioJuarez",
     repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
   },
-
   {
     name: "Videogames Hub",
     description:
@@ -56,6 +55,30 @@ const dataProjects = [
       "https://www.youtube.com/watch?v=9LU6qFour2M&ab_channel=SilvioJuarez",
     repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
   },
+  {
+    name: "Brenda Dvoskin",
+    description:
+      "Development of Brenda Dvoskin's Portfolio",
+    technologies: [
+      "JavaScript",
+      "React",
+      "Redux",
+      "CSS",
+      "NodeJs",
+      "Express",
+      "PostgreSQL",
+      "Sequelize",
+    ],
+    tasks: [
+      "Complete the entire front-end application",
+    ],
+    deploy: "",
+    youtube:
+      "",
+    repository: "",
+  },
+
+  
 ];
 
-export { dataProjects };
+export { dataDvoskinProjects };
