@@ -58,16 +58,11 @@ const dataDvoskinProjects = [
   {
     name: "Brenda Dvoskin",
     description:
-      "Development of Brenda Dvoskin's Portfolio",
+      "Front-end development of Brenda Dvoskin's portfolio, the first Argentine Doctor in Law graduated from Harvard Law School",
     technologies: [
       "JavaScript",
       "React",
-      "Redux",
       "CSS",
-      "NodeJs",
-      "Express",
-      "PostgreSQL",
-      "Sequelize",
     ],
     tasks: [
       "Complete the entire front-end application",
