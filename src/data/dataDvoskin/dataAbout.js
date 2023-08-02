@@ -1,3 +1,3 @@
-const dataDvoAbout = "data about Dvoskin...";
+const dataDvoskinAbout = "data about Dvoskin...";
 
-export { dataDvoAbout };
+export { dataDvoskinAbout };

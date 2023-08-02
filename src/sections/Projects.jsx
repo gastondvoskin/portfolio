@@ -1,12 +1,17 @@
-import { dataProjects } from "../data/dataRovaletti/dataProjects";
+import { dataDvoskinProjects } from "../data/dataDvoskin/dataProjects"; 
+import { dataRovalettiProjects } from "../data/dataRovaletti/dataProjects";
 
 const Projects = () => {
+  const dataOwner = import.meta.env.VITE_DATAOWNER;
+  const dataProjects = dataOwner === 'dvoskin' ? dataDvoskinProjects : dataRovalettiProjects;
+
   return (
     <div name="projects">
+      <h1>PROJECTS</h1>
       {dataProjects.map((project) => {
         return (
           <div>
-            <h1>{project.name}</h1>
+            <h2>{project.name}</h2>
             <p>{project.description}</p>
             <a target="_blank" href={project.deploy}>
               <button>Deploy</button>
@@ -17,6 +22,7 @@ const Projects = () => {
             <a target="_blank" href={project.repository}>
               <button>Repository</button>
             </a>
+            <hr />
           </div>
         );
       })}

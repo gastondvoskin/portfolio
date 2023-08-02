@@ -1,3 +1,3 @@
-const name = "Santiago Rovaletti";
+const nameDvoskin = "Gastón Dvoskin";
 
-export { name };
+export { nameDvoskin };
