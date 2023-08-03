@@ -1,7 +1,10 @@
 figma: https://www.figma.com/file/YDfWOSxTOv8HytsBIWfTsZ/maqueta-1?type=design&node-id=1-2&mode=design&t=ORV2CcFY0GCNyXxa-0
+Icons: https://simpleicons.org/
+
 proyectos:
 - https://www.rammaheshwari.com
 - https://github.com/HX-FMontoya/simplefolio
+- https://caferati.me/ 
 
 Pasos:
 1. Armar carpetas
@@ -13,6 +16,8 @@ Pasos:
 7. Skills  
 8. Form y Links
 9. Imagenes y frases
+
+
 
 
 Para hacer dos portfolios, tal vez sea mejor tener un back-end y que la información se cargue con una baseURL diferente en función de la variable de entorno. 
