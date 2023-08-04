@@ -9,11 +9,14 @@ const About = () => {
   const dataAbout = dataOwner === 'dvoskin' ? dataDvoskinAbout : dataRovalettiAbout;
 
   return (
-    <div name="about" className="h-screen bg-[#284e94]">
-      <h1 className="text-3xl font-bold underline">Hi! I'm {name}</h1>
-      <h2>Full-stack web developer</h2>
-      <p>{dataAbout}</p>
-    </div>
+    <main name="about" className="h-screen bg-mybg-one text-mytext">
+      <div className="flex flex-col items-center">
+        <h3 className="text-mytext text-2xl">Welcome to my portfolio! My name is</h3>
+        <h1 className="text-myacc-one text-6xl">{name}</h1>
+        <h2 className="text-myacc-one text-3xl">Full-stack web developer</h2>
+        <p>{dataAbout}</p>
+      </div>
+    </main>
   );
 };
 
