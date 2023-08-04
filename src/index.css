@@ -1,10 +1,3 @@
-body {
-  /* background-color: var(--myBlack); */
-  background-color: green;
-  color: var(--myWhite);
-}
-:root {
-  --myBlack: black;
-  --myWhite: white;
-  --fontFamily: "Poppins", sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
