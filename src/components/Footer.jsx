@@ -13,18 +13,18 @@ const Footer = () => {
   const WHATSAPP_URL = `https://wa.me/${dataContact.telephoneNumber}?text=${encodedMessage}`;
 
   return (
-    <div name="footer" className="flex w-full justify-center h-20 items-center bg-mybgnav text-mytextnav border-t-4 border-solid border-black dark:bg-mybgd dark:text-mytextd" >
+    <div name="footer" className="flex w-full justify-center h-20 items-center bg-white text-mytextnav border-t-4 border-solid border-black" >
       <a href={dataContact.github} target="_blank">
-        <img className="w-10 h-10" src={github} alt="GitHub"  />
+        <img className="w-10 h-10 m-5" src={github} alt="GitHub"  />
       </a>
       <a href={dataContact.linkedin} target="_blank">
-        <img className="w-10 h-10" src={linkedin} alt="GitHub" />
+        <img className="w-10 h-10 m-5" src={linkedin} alt="GitHub" />
       </a>
       <a href={`mailto:${dataContact.gmail}`} target="_blank">
-        <img className="w-10 h-10" src={gmail} alt="Gmail"/>
+        <img className="w-10 h-10 m-5" src={gmail} alt="Gmail"/>
       </a>
       <a href={WHATSAPP_URL} target="_blank">
-        <img className="w-10 h-10 " src={whatsapp} alt="Whatsapp" />
+        <img className="w-10 h-10 m-5" src={whatsapp} alt="Whatsapp" />
       </a>
     </div>
   );

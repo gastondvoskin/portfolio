@@ -7,7 +7,7 @@ const Navbar = () => {
     html.classList.toggle("dark");
   };
   return (
-    <nav className="dark:text-mytextnavd flex flex-row justify-end items-center bg-mybgnav w-full h-16 text-mytextnav fixed border-b-4 border-solid border-black dark:bg-mybgnav ">
+    <nav className="flex flex-row justify-end items-center bg-white w-full h-16 text-black fixed border-b-4 border-solid border-black">
       <div className="flex">
         <Link
           className="px-7 cursor-pointer"
