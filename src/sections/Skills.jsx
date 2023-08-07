@@ -1,20 +1,27 @@
-import dataDvoskinSkills from "../data/dataDvoskin/dataSkills"; 
+import dataDvoskinSkills from "../data/dataDvoskin/dataSkills";
 import dataRovalettiSkills from "../data/dataRovaletti/dataSkills";
-import icons from '../assets/icons'; // Importa el objeto con todas las imágenes SVG
+import icons from "../assets/icons"; // Importa el objeto con todas las imágenes SVG
 
 const Skills = () => {
   const dataOwner = import.meta.env.VITE_DATAOWNER;
-  const dataSkills = dataOwner === 'dvoskin' ? dataDvoskinSkills : dataRovalettiSkills;
+  const dataSkills =
+    dataOwner === "dvoskin" ? dataDvoskinSkills : dataRovalettiSkills;
 
   return (
-    <div className="pt-16 pb-16 h-screen" name="skills">
-      <h1>SKILLS</h1>
-      {dataSkills.map((skill, index) => (
-        <div key={index}>
-          {icons[skill.name] ? <img src={icons[skill.name]} alt={skill.name} width="50" height="50" /> : <p>No se encontró la imagen para esta habilidad</p>}
-        </div>
-      ))}
-    </div>
+    <main className="flex flex-col pt-16 pb-16 bg-mybg1 dark:bg-mybg1d" className="w-full pt-16 pb-16 bg-mybg1 dark:bg-mybg1d" 
+    name="skills">
+      <h1 className="text-4xl">TECHNOLOGIES</h1>
+      <div className="flex flex-wrap">
+        {dataSkills.map((skill, index) => (
+          <img
+            className="m-2 w-10 h-10"
+            key={index}
+            src={icons[skill.name]}
+            alt={skill.name}
+          />
+        ))}
+      </div>
+    </main>
   );
 };
 
