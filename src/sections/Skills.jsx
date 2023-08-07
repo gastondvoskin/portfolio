@@ -8,7 +8,7 @@ const Skills = () => {
     dataOwner === "dvoskin" ? dataDvoskinSkills : dataRovalettiSkills;
 
   return (
-    <main className="flex flex-col pt-16 pb-16 bg-mybg1 dark:bg-mybg1d" className="w-full pt-16 pb-16 bg-mybg1 dark:bg-mybg1d" 
+    <main className="flex flex-col pt-16 pb-16 bg-mybg1 dark:bg-mybg1d"
     name="skills">
       <h1 className="text-4xl">TECHNOLOGIES</h1>
       <div className="flex flex-wrap">
