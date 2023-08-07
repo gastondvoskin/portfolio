@@ -7,7 +7,7 @@ const Skills = () => {
   const dataSkills = dataOwner === 'dvoskin' ? dataDvoskinSkills : dataRovalettiSkills;
 
   return (
-    <div name="skills">
+    <div className="pt-16 pb-16" name="skills">
       <h1>SKILLS</h1>
       {dataSkills.map((skill, index) => (
         <div key={index}>

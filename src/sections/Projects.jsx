@@ -6,7 +6,7 @@ const Projects = () => {
   const dataProjects = dataOwner === 'dvoskin' ? dataDvoskinProjects : dataRovalettiProjects;
 
   return (
-    <div name="projects">
+    <div className="pt-16 pb-16" name="projects" >
       <h1>PROJECTS</h1>
       {dataProjects.map((project) => {
         return (
