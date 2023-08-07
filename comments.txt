@@ -2,6 +2,9 @@ figma: https://www.figma.com/file/YDfWOSxTOv8HytsBIWfTsZ/maqueta-1?type=design&n
 Icons: https://simpleicons.org/
 
 proyectos:
+- https://react-tailwindcss-portfolio.netlify.app/
+- https://github.com/realstoman/react-tailwindcss-portfolio/tree/main
+
 - https://www.rammaheshwari.com
 - https://github.com/HX-FMontoya/simplefolio
 - https://caferati.me/ 
@@ -17,6 +20,7 @@ Pasos:
 8. Form y Links
 9. Imagenes y frases
 
+Tailwind: https://tailwindcomponents.com/cheatsheet/
 
 
 
