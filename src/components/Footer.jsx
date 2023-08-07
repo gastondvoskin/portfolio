@@ -13,7 +13,7 @@ const Footer = () => {
   const WHATSAPP_URL = `https://wa.me/${dataContact.telephoneNumber}?text=${encodedMessage}`;
 
   return (
-    <div name="footer" className="flex bg-mybg-two w-full justify-center h-20 items-center" >
+    <div name="footer" className="flex w-full justify-center h-20 items-center" >
       <a href={dataContact.github} target="_blank">
         <img className="w-10 h-10" src={github} alt="GitHub"  />
       </a>
