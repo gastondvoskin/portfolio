@@ -14,12 +14,15 @@ export default {
         'mytext': 'black',  /* black */
 
         // dark
-        'mybg1d': '#13293D', /* deep blue */
+        /* 'mybg1d': '#13293D', */ /* deep blue */
+        'mybg1d': '#162C41', /* deep blue */
+
         'mybg2d': '#1F3E5A', /* deep blue lighter*/
         'mytextd': 'white', /* white */ 
 
         // acc
-        'myacc': '#FF6F61', /* pink */
+        'myacc': '#8B00FF', /* pink */
+        'myaccd': '#FF6F61' /* purple */
       },
     },
   },
