@@ -9,10 +9,10 @@ const About = () => {
   const dataAbout = dataOwner === 'dvoskin' ? dataDvoskinAbout : dataRovalettiAbout;
 
   return (
-    <main name="about" className="h-screen pt-16 pb-16">
+    <main name="about" className="h-screen pt-16 pb-16 bg-mybg dark:bg-mybgd">
       <div className="flex flex-col items-center">
         <h3 className="text-2xl">Welcome to my portfolio! My name is</h3>
-        <h1 className="text-6xl">{name}</h1>
+        <h1 className="text-6xl text-myacc">{name}</h1>
         <h2 className="text-3xl">Full-stack web developer</h2>
         <p>{dataAbout}</p>
       </div>

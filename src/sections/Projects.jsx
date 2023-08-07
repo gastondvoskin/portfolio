@@ -6,7 +6,7 @@ const Projects = () => {
   const dataProjects = dataOwner === 'dvoskin' ? dataDvoskinProjects : dataRovalettiProjects;
 
   return (
-    <div className="pt-16 pb-16" name="projects" >
+    <div className="pt-16 pb-16 bg-mybg2 h-screen" name="projects" >
       <h1>PROJECTS</h1>
       {dataProjects.map((project) => {
         return (
@@ -22,7 +22,6 @@ const Projects = () => {
             <a target="_blank" href={project.repository}>
               <button>Repository</button>
             </a>
-            <hr />
           </div>
         );
       })}

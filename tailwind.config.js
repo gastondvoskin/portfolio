@@ -8,16 +8,26 @@ export default {
   theme: {
     extend: {
       colors: {
+        // nav
+        'mybgnav': '#87CEFA', /* light blue */
+        'mytextnav': 'black', /* white */
+        'mybgnavd': '#87CEFA', /* light blue */
+        'mytextnavd': 'black', /* white */
+
         // light
-        'mybg': '#f2f2f2', /* light gray */
+        'mybg1': '#ECECEC', /* light gray */
+        'mybg2': '#D9D9D9', /* light gray */
         'mytext': 'black',  /* black */
-        'myacc': '#13293D', /* deep blue */
 
         // dark
         'mybgd': '#13293D', /* deep blue */
         'mytextd': 'white', /* white */ 
-        'myaccd': '#f2f2f2', /* light gray */
-        // 'myaccd1': '#FF6F61', /* pink */
+
+        // acc
+        'myacc': '#FF6F61', /* pink */
+
+        
+
       },
     },
   },
