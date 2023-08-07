@@ -6,11 +6,11 @@ const Projects = () => {
   const dataProjects = dataOwner === 'dvoskin' ? dataDvoskinProjects : dataRovalettiProjects;
 
   return (
-    <main name="projects" className="flex flex-col items-center justify-center pt-16 pb-16 bg-mybg2 bg-red-500 w-full dark:bg-mybg2d">
-      <h1>PROJECTS</h1>
+    <main name="projects" className="flex flex-col w-full pt-16 pb-16 bg-mybg2 dark:bg-mybg2d">
+      <h1 className="text-4xl">PROJECTS</h1>
       {dataProjects.map((project) => {
         return (
-          <main>
+          <div>
             <h2>{project.name}</h2>
             <p>{project.description}</p>
             <a target="_blank" href={project.deploy}>
@@ -22,7 +22,7 @@ const Projects = () => {
             <a target="_blank" href={project.repository}>
               <button className="border-solid border-2 border-black">Repository</button>
             </a>
-          </main>
+          </div>
         );
       })}
     </main>
