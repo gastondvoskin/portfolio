@@ -1,3 +1,6 @@
+import videogameshubImg from "../../assets/projectsImages/videogameshubImg.png";
+import viandaexpressImg from "../../assets/projectsImages/viandaexpressImg.png";
+
 const dataDvoskinProjects = [
   {
     name: "Vianda express",
@@ -32,7 +35,9 @@ const dataDvoskinProjects = [
     youtube:
       "https://www.youtube.com/watch?v=9LU6qFour2M&ab_channel=SilvioJuarez",
     repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
+    image: viandaexpressImg,
   },
+
   {
     name: "Videogames Hub",
     description:
@@ -54,7 +59,9 @@ const dataDvoskinProjects = [
     youtube:
       "https://www.youtube.com/watch?v=9LU6qFour2M&ab_channel=SilvioJuarez",
     repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
+    image: videogameshubImg,
   },
+
   {
     name: "Brenda Dvoskin",
     description:
@@ -71,6 +78,7 @@ const dataDvoskinProjects = [
     youtube:
       "",
     repository: "",
+    image: videogameshubImg,
   },
 
   

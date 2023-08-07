@@ -10,7 +10,7 @@ const Skills = () => {
   return (
     <main className="flex flex-col pt-16 pb-16 bg-mybg1 dark:bg-mybg1d"
     name="skills">
-      <h1 className="text-4xl">TECHNOLOGIES</h1>
+      <h1 className="text-4xl text-myacc dark:text-myaccd">TECHNOLOGIES</h1>
       <div className="flex flex-wrap">
         {dataSkills.map((skill, index) => (
           <img
