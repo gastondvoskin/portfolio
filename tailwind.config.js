@@ -12,16 +12,12 @@ export default {
         'mybg1': '#ECECEC', /* light gray */
         'mybg2': '#D9D9D9', /* light gray */
         'mytext': 'black',  /* black */
-
+        'myacc': '#8B00FF', /* pink */
+        
         // dark
-        /* 'mybg1d': '#13293D', */ /* deep blue */
         'mybg1d': '#162C41', /* deep blue */
-
         'mybg2d': '#1F3E5A', /* deep blue lighter*/
         'mytextd': 'white', /* white */ 
-
-        // acc
-        'myacc': '#8B00FF', /* pink */
         'myaccd': '#FF6F61' /* purple */
       },
     },
