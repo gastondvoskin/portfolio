@@ -25,3 +25,11 @@ Tailwind: https://tailwindcomponents.com/cheatsheet/
 
 
 Para hacer dos portfolios, tal vez sea mejor tener un back-end y que la información se cargue con una baseURL diferente en función de la variable de entorno. 
+
+Deploy: 
+https://santiago-rovaletti-portfolio.vercel.app/
+
+
+Next steps: 
+- Responsive Nav. 
+- Add a back-end to send an email when submitting the form. 

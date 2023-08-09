@@ -2,19 +2,31 @@ import { nameDvoskin } from "../data/dataDvoskin/dataContact";
 import { nameRovaletti } from "../data/dataRovaletti/dataContact";
 import { dataDvoskinAbout } from "../data/dataDvoskin/dataAbout";
 import { dataRovalettiAbout } from "../data/dataRovaletti/dataAbout";
+import dvoskin from "../assets/profileImage/dvoskin.jpg";
 
 const About = () => {
   const dataOwner = import.meta.env.VITE_DATAOWNER;
-  const name = dataOwner === 'dvoskin' ? nameDvoskin : nameRovaletti;
-  const dataAbout = dataOwner === 'dvoskin' ? dataDvoskinAbout : dataRovalettiAbout;
+  const dataAbout =
+    dataOwner === "dvoskin" ? dataDvoskinAbout : dataRovalettiAbout;
 
+  /* className="grid grid-cols-2 m-10 */
   return (
-    <main name="about" className="flex flex-col w-full pt-32 pb-16 bg-mybg1 dark:bg-mybg1d">
-      <div className="flex flex-col items-center">
-        <h3 className="text-2xl">Welcome to my portfolio! My name is</h3>
-        <h1 className="text-6xl text-myacc">{name}</h1>
-        <h2 className="text-3xl">Full-stack web developer</h2>
-        <p>{dataAbout}</p>
+    <main
+      name="about"
+      className="flex flex-col w-full items-center pt-24 pb-16 bg-mybg2 dark:bg-mybg2d"
+    >
+      <div className="flex flex-col w-3/4 items-center">
+        <h1 className="mb-16 text-5xl text-myacc dark:text-myaccd">ABOUT</h1>
+        <div className="grid grid-cols-2 ">
+          <img className="w-3/4" src={dvoskin} alt="Dvoskin" />
+          <div>
+            {dataAbout.map((paragraph, index) => {
+              return (
+                <p className="font-sans text-base mb-10">{paragraph}</p>
+              )
+            })}
+          </div>
+        </div>
       </div>
     </main>
   );
