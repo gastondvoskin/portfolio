@@ -30,7 +30,7 @@ const Navbar = () => {
           className="px-7 cursor-pointer"
           to="home"
           smooth={true}
-          duration={500}
+          duration={700}
         >
           HOME
         </Link>
@@ -38,7 +38,7 @@ const Navbar = () => {
           className="px-7 cursor-pointer"
           to="about"
           smooth={true}
-          duration={500}
+          duration={700}
         >
           ABOUT
         </Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
           className="px-7 cursor-pointer"
           to="projects"
           smooth={true}
-          duration={500}
+          duration={700}
         >
           PROJECTS
         </Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
           className="px-7 cursor-pointer"
           to="skills"
           smooth={true}
-          duration={500}
+          duration={700}
         >
           TECHNOLOGIES
         </Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
           className="px-7 cursor-pointer"
           to="contact"
           smooth={true}
-          duration={500}
+          duration={700}
         >
           CONTACT
         </Link>
