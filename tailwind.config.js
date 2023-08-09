@@ -6,6 +6,15 @@ export default {
   ],
   darkMode: 'class',
   theme: {
+    /* fontFamily: {
+      sans: [
+        "Inter var, sans-serif",
+        {
+          fontFeatureSettings: '"cv11", "ss01"',
+          fontVariationSettings: '"opsz" 32'
+        },
+      ],
+    }, */
     extend: {
       colors: {
         // light

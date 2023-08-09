@@ -5,12 +5,12 @@ const Contact = () => {
 
   return (
     <main
-      className="flex flex-col items-center pt-16 pb-16 bg-mybg1 dark:bg-mybg1d"
+      className="flex flex-col items-center pt-24 pb-16 bg-mybg1 dark:bg-mybg1d"
       name="contact"
     >
       <div className="flex flex-col items-center w-4/5 ">
-        <h1 className="text-4xl text-myacc dark:text-myaccd">CONTACT</h1>
-        <p>{TEXT}</p>
+        <h1 className="mb-16 text-5xl text-myacc dark:text-myaccd">CONTACT</h1>
+        <p className="font-sans">{TEXT}</p>
         <Form />
       </div>
     </main>

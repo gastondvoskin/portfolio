@@ -18,16 +18,16 @@ const Projects = () => {
   };
 
   return (
-    <main name="projects" className="flex flex-col w-full items-center pt-16 pb-16 bg-mybg1 dark:bg-mybg1d">
+    <main name="projects" className="flex flex-col w-full items-center pt-24 pb-16 bg-mybg1 dark:bg-mybg1d">
       <div className="flex flex-col items-center w-3/4">
-        <h1 className="text-4xl text-myacc dark:text-myaccd">PROJECTS</h1>
+        <h1 className="mb-16 text-5xl text-myacc dark:text-myaccd">PROJECTS</h1>
         {dataProjects.map((project, index) => {
           return (
-            <div key={index} className="grid grid-cols-2 m-10">
-              <img className="w-3/4" src={project.image} alt="" />
+            <div key={index} className="grid grid-cols-2 mt-20">
+              <img className="w-3/4" src={project.image} alt={project.name} />
               <div className="flex flex-col items-center">
                 <h2 className="text-2xl">{project.name}</h2>
-                <p className="text-base">{project.description}</p>
+                <p className="text-base font-sans">{project.description}</p>
                 <button
                   className="m-3 p-1 border-solid border-2 border-black rounded-md bg-myacc text-white dark:bg-myaccd dark:text-black"
                   onClick={() => openProjectDetail(project)}

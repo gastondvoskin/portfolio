@@ -6,21 +6,26 @@ import dvoskin from "../assets/profileImage/dvoskin.jpg";
 
 const About = () => {
   const dataOwner = import.meta.env.VITE_DATAOWNER;
-  const name = dataOwner === 'dvoskin' ? nameDvoskin : nameRovaletti;
-  const dataAbout = dataOwner === 'dvoskin' ? dataDvoskinAbout : dataRovalettiAbout;
+  const dataAbout =
+    dataOwner === "dvoskin" ? dataDvoskinAbout : dataRovalettiAbout;
 
+  /* className="grid grid-cols-2 m-10 */
   return (
-    <main name="about" className="flex flex-col w-full items-center pt-16 pb-16 bg-mybg2 dark:bg-mybg2d">
-      <h1 className="mb-16 text-5xl text-myacc dark:text-myaccd">ABOUT</h1>
-      <div className="flex flex-row items-center w-3/4">
-        {/* <h3 className="mb-8 text-2xl mt-32">Welcome to my portfolio! My name is</h3>
-        <h1 className="mb-1 text-6xl text-myacc dark:text-myaccd">{name}</h1>
-        <h2 className="mb-32 text-3xl">Full-stack web developer</h2> */}
-        <div className="flex w-2/4 justify-center">
-          <img className="w-3/5 rounded-full" src={dvoskin} alt="Dvoskin" />
-        </div>
-        <div className="flex w-2/4 justify-center">
-          <p className="w-3/5 text-center">{dataAbout}</p>
+    <main
+      name="about"
+      className="flex flex-col w-full items-center pt-24 pb-16 bg-mybg2 dark:bg-mybg2d"
+    >
+      <div className="flex flex-col w-3/4 items-center">
+        <h1 className="mb-16 text-5xl text-myacc dark:text-myaccd">ABOUT</h1>
+        <div className="grid grid-cols-2 ">
+          <img className="w-3/4" src={dvoskin} alt="Dvoskin" />
+          <div>
+            {dataAbout.map((paragraph, index) => {
+              return (
+                <p className="font-sans text-base mb-10">{paragraph}</p>
+              )
+            })}
+          </div>
         </div>
       </div>
     </main>
