@@ -18,7 +18,7 @@ const Projects = () => {
   };
 
   return (
-    <main name="projects" className="flex flex-col w-full items-center pt-16 pb-16 bg-mybg2 dark:bg-mybg2d">
+    <main name="projects" className="flex flex-col w-full items-center pt-16 pb-16 bg-mybg1 dark:bg-mybg1d">
       <div className="flex flex-col items-center w-3/4">
         <h1 className="text-4xl text-myacc dark:text-myaccd">PROJECTS</h1>
         {dataProjects.map((project, index) => {
