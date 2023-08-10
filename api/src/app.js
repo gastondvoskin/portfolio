@@ -1,7 +1,7 @@
 const express = require("express");
 const morgan = require("morgan");
 const cors = require("cors");
-
+const router = require("./routes/indexRouter.js");
 
 const app = express();
 
@@ -10,7 +10,7 @@ app.use(morgan("dev"));
 
 app.use(cors());
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*'); /* https://viandaexpress.vercel.app, http://localhost:5173 */
+    res.header('Access-Control-Allow-Origin', '*');
     res.header("Access-Control-Allow-Credentials", "true");
     res.header(
       "Access-Control-Allow-Headers",
@@ -19,13 +19,11 @@ app.use((req, res, next) => {
     res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE");
     next();
   });
-app.use((req,res,next)=>{
-    console.log('hola que haceeee');
-    next()
-})
-  
+
+
+app.use("/", router);
+
 app.use((err, req, res, next) => {
-    /* ?? */
     const status = err.status || 500;
     const message = err.message || err;
     console.error(err);
