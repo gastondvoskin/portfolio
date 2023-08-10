@@ -1,32 +1,15 @@
-import github from "../assets/contactIcons/github-color.svg";
-import linkedin from "../assets/contactIcons/linkedin-color.svg";
-import gmail from "../assets/contactIcons/gmail-color.svg";
-import whatsapp from "../assets/contactIcons/whatsapp-color.svg";
-import { dataDvoskinContact } from "../data/dataDvoskin/dataContact";
-import { dataRovalettiContact } from "../data/dataRovaletti/dataContact";
-
 const Footer = () => {
   const dataOwner = import.meta.env.VITE_DATAOWNER;
-  const dataContact = dataOwner ===  "dvoskin" ? dataDvoskinContact : dataRovalettiContact
-  const WHATSAPP_MESSAGE = "Hi! My name is...\nI saw your online portfolio. I would like to contact you...\nThanks in advance!";
-  const encodedMessage = encodeURIComponent(WHATSAPP_MESSAGE);
-  const WHATSAPP_URL = `https://wa.me/${dataContact.telephoneNumber}?text=${encodedMessage}`;
+  const authors = dataOwner === 'dvoskin' ? "Gastón Dvoskin & Santiago Rovaletti" : "Santiago Rovaletti & Gastón Dvoskin";
+
+  const currentYear = new Date().getFullYear();
 
   return (
-    <div name="footer" className="flex w-full justify-center h-20 items-center bg-white text-mytextnav border-t-4 border-solid border-black" >
-      <a href={dataContact.github} target="_blank">
-        <img className="w-10 h-10 m-5" src={github} alt="GitHub"  />
-      </a>
-      <a href={dataContact.linkedin} target="_blank">
-        <img className="w-10 h-10 m-5" src={linkedin} alt="GitHub" />
-      </a>
-      <a href={`mailto:${dataContact.gmail}`} target="_blank">
-        <img className="w-10 h-10 m-5" src={gmail} alt="Gmail"/>
-      </a>
-      <a href={WHATSAPP_URL} target="_blank">
-        <img className="w-10 h-10 m-5" src={whatsapp} alt="Whatsapp" />
-      </a>
-    </div>
+    <footer 
+      name="footer" 
+      className="flex flex-col w-full justify-center items-center h-32 bg-white text-black border-t-4 border-solid border-black dark:bg-slate-900 dark:text-white">
+        <h1>{`© ${currentYear} ${authors}. All Rights Reserved.`}</h1> 
+    </footer>
   );
 };
 
