@@ -13,7 +13,7 @@ const Home = () => {
       className="flex flex-col w-full h-screen items-center pt-24 pb-24 bg-mybg1 dark:bg-mybg1d"
     >
       <div className="flex flex-col w-full h-full justify-center items-center ">
-        <h1 className="text-8xl pt-24 text-orange-800 m-60 text-center">PORTFOLIO UNDER CONSTRUCTION</h1>
+        {/* <h1 className="text-8xl pt-24 text-orange-800 m-60 text-center">PORTFOLIO UNDER CONSTRUCTION</h1> */}
         
         <h3 className="mb-8 text-5xl mt-32">
           Welcome! My name is

@@ -1,5 +1,7 @@
 import videogameshubImg from "../../assets/projectsImages/videogameshubImg.png";
 import viandaexpressImg from "../../assets/projectsImages/viandaexpressImg.png";
+import brendadvoskinImg from "../../assets/projectsImages/brendadvoskinImg.png";
+
 
 const dataDvoskinProjects = [
   {
@@ -65,7 +67,7 @@ const dataDvoskinProjects = [
   {
     name: "Brenda Dvoskin",
     description:
-      "Front-end development of Brenda Dvoskin's portfolio, the first Argentine Doctor in Law graduated from Harvard Law School",
+      "Front-end development of Brenda Dvoskin's portfolio, the first Argentine woman in becoming Doctor in Law graduated from Harvard Law School",
     technologies: [
       "JavaScript",
       "React",
@@ -77,8 +79,8 @@ const dataDvoskinProjects = [
     deploy: "",
     youtube:
       "",
-    repository: "",
-    image: videogameshubImg,
+    repository: "https://github.com/gastondvoskin/Brenda-Dvoskin-Web.git",
+    image: brendadvoskinImg,
   },
 
   
