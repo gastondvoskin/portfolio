@@ -5,15 +5,18 @@ import dvoskin from "../assets/profileImage/dvoskin.jpg";
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
 
+  const html = document.querySelector("html");
+  
   const toggleDarkMode = () => {
-    const html = document.querySelector("html");
     // console.log(html.classList[0])
     html.classList.toggle("dark");
     setDarkMode(!darkMode);
   };
 
+
+
   return (
-    <main className="flex flex-row justify-between items-center bg-white w-full h-16 text-black fixed border-b-4 border-solid border-black">
+    <main className="flex flex-row justify-between items-center bg-white w-full h-16 text-black fixed border-b-4 border-solid border-black dark:bg-slate-900 dark:text-white">
       <button onClick={() => scroll.scrollToTop()}>
         <div className="flex items-center ml-8">
           <img

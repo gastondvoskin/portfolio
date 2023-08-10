@@ -1,5 +1,3 @@
-import { nameDvoskin } from "../data/dataDvoskin/dataContact";
-import { nameRovaletti } from "../data/dataRovaletti/dataContact";
 import { dataDvoskinAbout } from "../data/dataDvoskin/dataAbout";
 import { dataRovalettiAbout } from "../data/dataRovaletti/dataAbout";
 import dvoskin from "../assets/profileImage/dvoskin.jpg";
@@ -13,7 +11,7 @@ const About = () => {
   return (
     <main
       name="about"
-      className="flex flex-col w-full items-center pt-24 pb-16 bg-mybg2 dark:bg-mybg2d"
+      className="flex flex-col w-full items-center pt-24 pb-24 bg-mybg2 dark:bg-mybg2d"
     >
       <div className="flex flex-col w-3/4 items-center">
         <h1 className="mb-16 text-5xl text-myacc dark:text-myaccd">ABOUT</h1>
@@ -22,7 +20,7 @@ const About = () => {
           <div>
             {dataAbout.map((paragraph, index) => {
               return (
-                <p className="font-sans text-base mb-10">{paragraph}</p>
+                <p key={index} className="font-sans text-base mb-10">{paragraph}</p>
               )
             })}
           </div>
