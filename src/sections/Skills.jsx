@@ -14,7 +14,7 @@ const Skills = () => {
       name="skills"
     >
       <div className="flex flex-col w-3/4 items-center">
-        <h1 className="mb-16 text-5xl text-myacc dark:text-myaccd">
+        <h1 className="mb-16 text-5xl font-bold text-myacc dark:text-myaccd">
           TECHNOLOGIES
         </h1>
         <div className="flex flex-wrap justify-center">
