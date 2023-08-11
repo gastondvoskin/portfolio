@@ -1,12 +1,42 @@
+import { useState } from "react";
+import axios from "axios"
+
+
 const Form = () => {
+  const [inputs,setInputs] = useState({
+    name:"",
+    email:"",
+    message:""
+  })
+
+
+  const onChange = (event) => {
+    const {value,name} = event.target
+    setInputs({...inputs,[name]:value})
+  } 
+
+  const onSubmit = async (e) =>{
+    e.preventDefault()
+    try {
+      const response = await axios.post("http://localhost:3001/contact",inputs)
+      .then(r => r.data)
+      alert(response)
+      setInputs({
+        name:"",
+        email:"",
+        message:""
+      });
+    } catch (error) {
+      alert(error.message)
+    }
+   
+  }
+
   return (
     <div className="w-full lg:w-1/2">
 			<div className="leading-loose">
 				<form
-					onSubmit={(e) => {
-						e.preventDefault();
-            console.log("proximamente");
-					}}
+					onSubmit={onSubmit}
 					className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
 				>
 					<p className="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8">
@@ -20,6 +50,8 @@ const Form = () => {
               Full Name
             </label>
             <input
+              value={inputs.name}
+              onChange={onChange}
               className="w-full px-5 py-2 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md"
               type="text"
               id="name"
@@ -37,6 +69,8 @@ const Form = () => {
               Email
             </label>
             <input
+              value={inputs.email}
+              onChange={onChange}
               className="w-full px-5 py-2 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md"
               type="Email"
               id="email"
@@ -54,6 +88,8 @@ const Form = () => {
 							Message
 						</label>
 						<textarea
+              value={inputs.message}
+              onChange={onChange}
 							className="w-full px-5 py-2 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md"
 							id="message"
 							name="message"

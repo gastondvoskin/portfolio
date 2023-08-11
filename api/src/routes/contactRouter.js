@@ -3,6 +3,6 @@ const sendEmailHandler = require("../handlers/contactHandlers");
 const contactRouter = Router();
 
 
-contactRouter.get("/",sendEmailHandler)
+contactRouter.post("/",sendEmailHandler)
 
 module.exports = {contactRouter}
