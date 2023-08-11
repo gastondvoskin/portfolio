@@ -1,8 +1,7 @@
 const dataRovalettiAbout = [
-  "¡Hola! Soy Santiago Rovaletti, un apasionado desarrollador web fullstack de 22 años de edad, originario de Argentina y actualmente residiendo en CABA.",
-  "Mi enfoque principal se encuentra en el desarrollo backend, donde disfruto diseñar y construir sólidas arquitecturas de servidor para aplicaciones web.", 
-  "Me encanta enfrentar desafíos técnicos y estoy constantemente buscando aprender nuevas tecnologías y mejorar mis habilidades. Además, soy un entusiasta del trabajo en equipo y siempre estoy dispuesto a colaborar en proyectos que impulsen la innovación tecnológica."
-  /* Translate to english amd add two more paragraphs into the array. */
+  "Hello! I am Santiago Rovaletti, a passionate 22-year-old fullstack web developer, originally from Argentina and currently residing in Buenos Aires.",
+  "My main focus is on backend development, where I enjoy designing and building robust server architectures for web applications.",
+  "I love tackling technical challenges and am constantly seeking to learn new technologies and improve my skills. Furthermore, I am a teamwork enthusiast and always ready to collaborate on projects that drive technological innovation."
 ];
 
 export { dataRovalettiAbout };

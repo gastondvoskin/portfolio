@@ -1,12 +1,14 @@
 import { dataDvoskinAbout } from "../data/dataDvoskin/dataAbout";
 import { dataRovalettiAbout } from "../data/dataRovaletti/dataAbout";
 import dvoskin from "../assets/profileImage/dvoskin.jpg";
+import rovaletti from "../assets/profileImage/rovaletti.jpg";
 import cvDvoskin from "../assets/CV/Dvoskin.pdf";
 
 const About = () => {
   const dataOwner = import.meta.env.VITE_DATAOWNER;
   const dataAbout =
     dataOwner === "dvoskin" ? dataDvoskinAbout : dataRovalettiAbout;
+  const profileImg =  dataOwner === "dvoskin" ? dvoskin : rovaletti;
 
   /* className="grid grid-cols-2 m-10 */
   return (
@@ -20,7 +22,7 @@ const About = () => {
         </h1>
         <div className="grid grid-cols-2">
           <div className="flex flex-col items-end mr-16">
-            <img className="w-4/5 mb-16" src={dvoskin} alt="Dvoskin" />{" "}
+            <img className="w-4/5 mb-16" src={profileImg} alt="Dvoskin" />{" "}
             {/* editing */}
             <div className="flex">
               <a
