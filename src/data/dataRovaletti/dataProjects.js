@@ -1,3 +1,5 @@
+import viandaexpressImg from "../../assets/projectsImages/viandaexpressImg.png";
+import videogamesPiImg from "../../assets/projectsImages/videogamesPI.png";
 const dataRovalettiProjects = [
   {
     name: "Vianda express",
@@ -32,10 +34,11 @@ const dataRovalettiProjects = [
     youtube:
       "https://www.youtube.com/watch?v=9LU6qFour2M&ab_channel=SilvioJuarez",
     repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
+    image:viandaexpressImg,
   },
 
   {
-    name: "Videogames Hub",
+    name: "Videogames PI",
     description:
       "Development of an individual full-stack application with the aim of rendering and filtering video games from an API and a proprietary database.",
     technologies: [
@@ -55,6 +58,7 @@ const dataRovalettiProjects = [
     youtube:
       "https://www.youtube.com/watch?v=9LU6qFour2M&ab_channel=SilvioJuarez",
     repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
+    image:videogamesPiImg,
   },
 ];
 

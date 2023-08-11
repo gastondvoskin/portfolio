@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { nameRovaletti } from "../data/dataRovaletti/dataContact";
+import { nameDvoskin } from "../data/dataDvoskin/dataContact";
 import dvoskin from "../assets/profileImage/dvoskin.jpg";
+import rovaletti from "../assets/profileImage/rovaletti.jpg";
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -12,7 +15,9 @@ const Navbar = () => {
     html.classList.toggle("dark");
     setDarkMode(!darkMode);
   };
-
+  const dataOwner = import.meta.env.VITE_DATAOWNER;
+  const ownerName =  dataOwner === "dvoskin" ? nameDvoskin : nameRovaletti;
+  const ownerImg =  dataOwner === "dvoskin" ? dvoskin : rovaletti;
 
 
   return (
@@ -21,10 +26,10 @@ const Navbar = () => {
         <div className="flex items-center ml-8">
           <img
             className="w-10 h-10 mr-2 rounded-full"
-            src={dvoskin}
-            alt="Dvoskin"
+            src={ownerImg}
+            alt={ownerName}
           />
-          <span>GASTÓN DVOSKIN</span>
+          <span>{ownerName}</span>
         </div>
       </button>
       
