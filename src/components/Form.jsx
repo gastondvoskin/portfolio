@@ -10,28 +10,31 @@ const Form = () => {
   })
 
 
-  const onChange = (event) => {
-    const {value,name} = event.target
-    setInputs({...inputs,[name]:value})
-  } 
+  const [loading, setLoading] = useState(false);
 
-  const onSubmit = async (e) =>{
-    e.preventDefault()
+  const onChange = (event) => {
+    const { value, name } = event.target;
+    setInputs({ ...inputs, [name]: value });
+  };
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
     try {
-      const response = await axios.post("http://localhost:3001/contact",inputs)
-      .then(r => r.data)
-      alert(response)
+      const response = await axios.post("http://localhost:3001/contact", inputs);
+      alert(response.data);
       setInputs({
         name:"",
         email:"",
         message:""
-      });
+      })
     } catch (error) {
-      alert(error.message)
+      alert("Error al enviar la consulta");
+    } finally {
+      setLoading(false);
     }
-   
-  }
-
+  };
   return (
     <div className="w-full lg:w-1/2">
 			<div className="leading-loose">
@@ -99,13 +102,18 @@ const Form = () => {
 						></textarea>
 					</div>
 
-					<div className="font-general-medium w-40 px-4 py-2.5 text-white text-center font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg mt-6 duration-500">
-						<button
-              type="sumbmit"
+          <div className="font-general-medium w-40 px-4 py-2.5 text-white text-center font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg mt-6 duration-500">
+            <button
+              type="submit"
             >
-              Send message
+              {loading ? (
+                "loading"
+              ) : (
+                "Send message"
+              )}
             </button>
-					</div>
+          </div>
+
 				</form>
 			</div>
 		</div>
