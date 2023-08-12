@@ -15,7 +15,7 @@ const About = () => {
       name="about"
       className="flex flex-col w-full items-center pt-24 pb-24 bg-mybg2 dark:bg-mybg2d"
     >
-      {/* about, image, CV, description */}
+      {/* h1, image, CV, description */}
       <div className="flex flex-col w-4/5 items-center justify-center">
         <h1 className="mb-16 text-3xl font-bold text-myacc dark:text-myaccd md:text-5xl">
           ABOUT
