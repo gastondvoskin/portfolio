@@ -18,16 +18,16 @@ const ContactIcons = () => {
   // dark:bg-slate-900 dark:rounded-3xl
 
   return (
-    <main className="flex justify-center items-center p-16 dark:rounded-3xl">
+    <main className="grid grid-cols-2 justify-center items-center dark:rounded-3xl lg:grid-cols-4">
       {/* github */}
-      <a className="w-16 h-16 mx-24" href={dataContact.github} target="_blank">
+      <a className="w-16 h-16 mx-10 my-4 lg:my-0" href={dataContact.github} target="_blank">
         <div className="bg-white rounded-md">
           <img className="p-1" src={github} alt="GitHub" />
         </div>
       </a>
       {/* linkedin */}
       <a
-        className="w-16 h-16 mx-24"
+        className="w-16 h-16 mx-10 my-4 lg:my-0"
         href={dataContact.linkedin}
         target="_blank"
       >
@@ -37,7 +37,7 @@ const ContactIcons = () => {
       </a>
       {/* gmail */}
       <a
-        className="w-16 h-16 mx-24"
+        className="w-16 h-16 mx-10 my-4 lg:my-0"
         href={`mailto:${dataContact.gmail}`}
         target="_blank"
       >
@@ -47,7 +47,7 @@ const ContactIcons = () => {
       </a>
       {/* whatsapp */}
 
-      <a className="w-16 h-16 mx-24" href={WHATSAPP_URL} target="_blank">
+      <a className="w-16 h-16 mx-10 my-4 lg:my-0" href={WHATSAPP_URL} target="_blank">
         <div className="bg-white rounded-md">
           <img className="p-1" src={whatsapp} alt="Whatsapp" />
         </div>
