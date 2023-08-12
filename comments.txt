@@ -17,6 +17,11 @@ Deploy:
 https://santiagorovaletti.vercel.app/
 https://gaston-dvoskin.vercel.app/
 
+Develop deploy: 
+https://santiagorovaletti-q67yfnnzp-santirova.vercel.app/ 
+https://gaston-dvoskin-ejk2oydgq-santirova.vercel.app/
+
+
 
 Next steps: 
 - Responsive Nav. 
