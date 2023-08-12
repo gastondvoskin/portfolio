@@ -24,7 +24,7 @@ const Home = () => {
           className="px-7 cursor-pointer text-3xl text-myacc dark:text-myaccd"
           to="about"
           smooth={true}
-          duration={700}
+          duration={300}
         >
           Click to know about me!
         </Link>

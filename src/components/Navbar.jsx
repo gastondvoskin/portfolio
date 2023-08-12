@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <main className="flex flex-row justify-between items-center bg-white w-full h-16 text-black fixed border-b-4 border-solid border-black dark:bg-slate-900 dark:text-white">
-      <button onClick={() => scroll.scrollToTop()}>
+      <button onClick={() => scroll.scrollToTop({duration: 300})}>
         <div className="flex items-center ml-8">
           <img
             className="w-10 h-10 mr-2 rounded-full"
@@ -38,7 +38,7 @@ const Navbar = () => {
           className="px-7 cursor-pointer"
           to="home"
           smooth={true}
-          duration={700}
+          duration={300}
         >
           HOME
         </Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
           className="px-7 cursor-pointer"
           to="about"
           smooth={true}
-          duration={700}
+          duration={300}
         >
           ABOUT
         </Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
           className="px-7 cursor-pointer"
           to="projects"
           smooth={true}
-          duration={700}
+          duration={300}
         >
           PROJECTS
         </Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
           className="px-7 cursor-pointer"
           to="skills"
           smooth={true}
-          duration={700}
+          duration={300}
         >
           TECHNOLOGIES
         </Link>
@@ -70,7 +70,7 @@ const Navbar = () => {
           className="px-7 cursor-pointer"
           to="contact"
           smooth={true}
-          duration={700}
+          duration={300}
         >
           CONTACT
         </Link>

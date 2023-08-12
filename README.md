@@ -1,8 +1,16 @@
-# React + Vite
+# Portfolio developed by Gastón Dvoskin and Santiago Rovaletti
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- About, Projects, technologies, Contact sections. 
+- Form contact. 
+- Dark and light modes. 
 
-Currently, two official plugins are available:
+## Main technologies: 
+### Front-end: 
+- JavaScript
+- React
+- Tailwind
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Back-end: 
+- Express
+- MongoDB
+- Sendgrid
