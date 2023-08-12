@@ -4,6 +4,9 @@ import { nameRovaletti } from "../data/dataRovaletti/dataContact";
 import { nameDvoskin } from "../data/dataDvoskin/dataContact";
 import dvoskin from "../assets/profileImage/dvoskin.jpg";
 import rovaletti from "../assets/profileImage/rovaletti.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons'; 
+
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -35,7 +38,7 @@ const Navbar = () => {
       
       <div className="flex items-center mr-8">
         <Link
-          className="px-7 cursor-pointer"
+          className="mx-7 cursor-pointer"
           to="home"
           smooth={true}
           duration={300}
@@ -43,7 +46,7 @@ const Navbar = () => {
           HOME
         </Link>
         <Link
-          className="px-7 cursor-pointer"
+          className="mx-7 cursor-pointer"
           to="about"
           smooth={true}
           duration={300}
@@ -51,7 +54,7 @@ const Navbar = () => {
           ABOUT
         </Link>
         <Link
-          className="px-7 cursor-pointer"
+          className="mx-7 cursor-pointer"
           to="projects"
           smooth={true}
           duration={300}
@@ -59,7 +62,7 @@ const Navbar = () => {
           PROJECTS
         </Link>
         <Link
-          className="px-7 cursor-pointer"
+          className="mx-7 cursor-pointer"
           to="skills"
           smooth={true}
           duration={300}
@@ -67,7 +70,7 @@ const Navbar = () => {
           TECHNOLOGIES
         </Link>
         <Link
-          className="px-7 cursor-pointer"
+          className="mx-7 cursor-pointer"
           to="contact"
           smooth={true}
           duration={300}
@@ -75,11 +78,13 @@ const Navbar = () => {
           CONTACT
         </Link>
         <button
-          className="rounded-full bg-mybg2 w-10 h-10 dark:bg-mybg1d"
+          className="mx-7 rounded-full bg-mybg2 w-10 h-10 dark:bg-mybg1d"
           onClick={toggleDarkMode}
         >
           {darkMode ? <div>☀️</div> : <div>☾</div>}
         </button>
+        
+        <FontAwesomeIcon icon={faBars} className="px-7 cursor-pointer md:hidden"/>
       </div>
     </main>
   );
