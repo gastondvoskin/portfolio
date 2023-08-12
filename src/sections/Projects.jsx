@@ -20,7 +20,7 @@ const Projects = () => {
   return (
     <main name="projects" className="flex flex-col w-full items-center pt-24 pb-24 bg-mybg1 dark:bg-mybg1d">
       <div className="flex flex-col items-center w-3/4">
-        <h1 className="mb-16 text-5xl font-bold text-myacc dark:text-myaccd">PROJECTS</h1>
+      <h1 className="mb-16 text-3xl font-bold text-myacc dark:text-myaccd md:text-5xl">PROJECTS</h1>
         {dataProjects.map((project, index) => {
           return (
             <div key={index} className="grid grid-cols-2 mt-20">

@@ -1,4 +1,4 @@
-const dataSkills = [
+const dataTechnologies = [
     { name: "HTML", icon: "HTML" },
     { name: "CSS", icon: "CSS" },
     { name: "JavaScript", icon: "JavaScript" },
@@ -21,5 +21,5 @@ const dataSkills = [
     { name: "Visual", icon: "Visual" },
 ];
   
-export default dataSkills;
+export default dataTechnologies;
   

@@ -1,35 +1,34 @@
-import dataDvoskinSkills from "../data/dataDvoskin/dataSkills";
-import dataRovalettiSkills from "../data/dataRovaletti/dataSkills";
+import dataDvoskinTechnologies from "../data/dataDvoskin/dataTechnologies";
+import dataRovalettiTechnologies from "../data/dataRovaletti/dataTechnologies";
 import icons from "../assets/icons"; // Importa el objeto con todas las imágenes SVG
-import { useState } from "react";
 
-const Skills = () => {
+const Technologies = () => {
   const dataOwner = import.meta.env.VITE_DATAOWNER;
-  const dataSkills =
-    dataOwner === "dvoskin" ? dataDvoskinSkills : dataRovalettiSkills;
+  const dataTechnologies =
+    dataOwner === "dvoskin" ? dataDvoskinTechnologies : dataRovalettiTechnologies;
 
   return (
-    <main
+    <section
       className="flex flex-col w-full items-center pt-24 pb-24 bg-mybg2 dark:bg-mybg2d"
       name="skills"
     >
-      <div className="flex flex-col w-3/4 items-center">
-        <h1 className="mb-16 text-5xl font-bold text-myacc dark:text-myaccd">
+      {/* h1, images */}
+      <div className="flex flex-col w-4/5 items-center">
+        {/* h1 */}
+        <h1 className="mb-16 text-3xl font-bold text-myacc dark:text-myaccd md:text-5xl">
           TECHNOLOGIES
         </h1>
+        {/* images */}
         <div className="flex flex-wrap justify-center">
-
-
-          {dataSkills.map((skill, index) => (
-            <div className="hover:bg-slate-600 dark:hover:bg-slate-300">
-              <div className="flex flex-col justify-center items-center w-24 h-24 m-10" >
+          {dataTechnologies.map((skill, index) => (
+            <div key={index} className="hover:bg-slate-600 dark:hover:bg-slate-300">
+              <div className="flex flex-col justify-center items-center w-12 h-12 m-6 md:w-16 md:h-16" >
                 <img
                   className="pb-2"
-                  key={index}
                   src={icons[skill.name]}
                   alt={skill.name}
                 />
-                <p className="text-sm text-mybg2 dark:text-mybg2d">
+                <p className="text-xs text-mybg2 dark:text-mybg2d">
                   {skill.name.toUpperCase()}
                 </p>
             </div>
@@ -48,11 +47,11 @@ const Skills = () => {
 
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 
-export default Skills;
+export default Technologies;
 
 // // OLD
 {

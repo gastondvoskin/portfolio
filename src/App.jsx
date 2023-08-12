@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import Home from "./sections/Home";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
-import Skills from "./sections/Skills";
+import Technologies from "./sections/Technologies";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <About />
       <Projects />
-      <Skills />
+      <Technologies />
       <Contact />
       <Footer />
     </div>
