@@ -1,5 +1,10 @@
 import { useState } from "react";
-import axios from "axios"
+import axios from "axios"; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'; 
+
+const envelopeIcon = <FontAwesomeIcon icon={faEnvelope} />
+
 
 
 const Form = () => {
@@ -109,7 +114,9 @@ const Form = () => {
               {loading ? (
                 "loading"
               ) : (
-                "Send message"
+                <div>
+                  {envelopeIcon} <span className="ml-2">Send</span> 
+                </div>
               )}
             </button>
           </div>

@@ -9,27 +9,17 @@ proyectos:
 - https://github.com/HX-FMontoya/simplefolio
 - https://caferati.me/ 
 
-Pasos:
-1. Armar carpetas
-2. Navbar(con scroll-react y fijo)
-3. Footer
-4. Data.js
-5. About (saludo e info)
-6. Proyectos
-7. Skills  
-8. Form y Links
-9. Imagenes y frases
-
 Tailwind: https://tailwindcomponents.com/cheatsheet/
 
 
 
-Para hacer dos portfolios, tal vez sea mejor tener un back-end y que la información se cargue con una baseURL diferente en función de la variable de entorno. 
-
 Deploy: 
-https://santiago-rovaletti-portfolio.vercel.app/
+https://santiagorovaletti.vercel.app/
+https://gaston-dvoskin.vercel.app/
 
 
 Next steps: 
 - Responsive Nav. 
 - Add a back-end to send an email when submitting the form. 
+- Move front-end into a client directory. Pay attention to the .gitignore for both back and front. 
+- axios.default. Use a differente environment variable for each deploy pointing to a different Railway back-end depending on the portfolio owner. 
