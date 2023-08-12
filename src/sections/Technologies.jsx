@@ -21,11 +21,10 @@ const Technologies = () => {
         {/* images */}
         <div className="flex flex-wrap justify-center">
           {dataTechnologies.map((skill, index) => (
-            <div className="hover:bg-slate-600 dark:hover:bg-slate-300">
+            <div key={index} className="hover:bg-slate-600 dark:hover:bg-slate-300">
               <div className="flex flex-col justify-center items-center w-12 h-12 m-6 md:w-16 md:h-16" >
                 <img
                   className="pb-2"
-                  key={index}
                   src={icons[skill.name]}
                   alt={skill.name}
                 />
