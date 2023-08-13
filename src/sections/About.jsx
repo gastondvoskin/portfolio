@@ -15,39 +15,33 @@ const About = () => {
       name="about"
       className="flex flex-col w-full items-center pt-24 pb-24 bg-mybg2 dark:bg-mybg2d"
     >
-      {/* h1, image, CV, description */}
-      <div className="flex flex-col w-4/5 items-center justify-center">
+      {/* h1, image - CV - description */}
+      <div className="flex flex-col w-4/5 items-center">
+        {/* h1 */}
         <h1 className="mb-16 text-3xl font-bold text-myacc dark:text-myaccd md:text-5xl">
           ABOUT
         </h1>
 
-        {/* image, CV, description */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
+        {/* image - CV, description */}
+        <div className="grid grid-cols-1 lg:grid-cols-2">
           {/* image and CV */}
           <div className="flex flex-col items-center">
+            {/* image */}
             <img className="w-4/5 mb-8 md:w-1/2" src={profileImg} alt="Dvoskin" />{" "}
             {/* CV buttons */}
             <div className="flex flex-col">
               <a
-                className="bg-myacc border-2 border-black text-white rounded-xl p-2 text-base dark:bg-myaccd dark:border-white m-4"
+                className="mb-12 p-2 bg-myacc border-2 border-black text-white font-bold rounded-xl text-base dark:bg-myaccd dark:text-black"
                 href={cvDvoskin}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                ► Open CV
-              </a>
-              <a
-                className="bg-myacc border-2 border-black text-white rounded-xl p-2 text-base dark:bg-myaccd dark:border-white m-4"
-                href={cvDvoskin}
-                rel="noopener noreferrer"
-                download
-              >
-                ▼ Download CV
+                VIEW CV
               </a>
             </div>
           </div>
           {/* description */}
-          <div className="xl:ml-16">
+          <div className="lg:ml-16">
             {dataAbout.map((paragraph, index) => {
               return (
                 <p key={index} className="font-sans text-base mb-10">
