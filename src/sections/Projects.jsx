@@ -23,7 +23,7 @@ const Projects = () => {
       name="projects"
       className="flex flex-col w-full items-center pt-24 pb-24 bg-mybg1 dark:bg-mybg1d"
     >
-      {/* h1 - mapped divs */}
+      {/* h1 - mapped divs container */}
       <div className="flex flex-col w-4/5 items-center">
         {/* h1 */}
         <h1 className="mb-16 text-3xl font-bold text-myacc dark:text-myaccd md:text-5xl">
@@ -34,7 +34,7 @@ const Projects = () => {
         <div className="flex flex-col">
           {dataProjects.map((project, index) => {
             return (
-              /* mapped divs */
+              /* h2 - image, description - button */ 
               <div
                 key={index}
                 className="grid grid-cols-1 mb-16 items-center lg:grid-cols-2"
@@ -48,10 +48,11 @@ const Projects = () => {
                   {/* image */}
                   <img className="my-8" src={project.image} alt={project.name} />
                 </div>
+
                 {/* description - button */}
                 <div className="lg:ml-16">
                   {/* description */}
-                  <p className="text-sm font-sans mb-5 md:text-base">
+                  <p className="text-sm font-sans mb-8 md:text-base">
                     {project.description}
                   </p>
                   {/* button */}

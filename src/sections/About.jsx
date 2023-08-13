@@ -44,7 +44,7 @@ const About = () => {
           <div className="lg:ml-16">
             {dataAbout.map((paragraph, index) => {
               return (
-                <p key={index} className="font-sans text-base mb-10">
+                <p key={index} className="mb-4 text-sm font-sans md:text-base">
                   {paragraph}
                 </p>
               );
