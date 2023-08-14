@@ -27,7 +27,7 @@ const Form = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:3001/contact", inputs);
+      const response = await axios.post("/contact", inputs);
       alert(response.data);
       setInputs({
         name:"",
