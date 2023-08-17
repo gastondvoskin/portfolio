@@ -33,7 +33,7 @@ const dataDvoskinProjects = [
       "Filtros combinados en el front tanto para el cliente como para el administrador",
       "Implementacion de Graficos para el administrador con NivoCharts",
     ],
-    deploy: "https://www.viandaexpress.vercel.app",
+    deploy: "https://viandaexpress.vercel.app/",
     youtube:
       "https://www.youtube.com/watch?v=9LU6qFour2M&ab_channel=SilvioJuarez",
     repository: "https://www.github.com/gastondvoskin/PFecommerce11B",

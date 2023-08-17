@@ -30,7 +30,7 @@ const dataRovalettiProjects = [
       "Filtros combinados en el front tanto para el cliente como para el administrador",
       "Implementacion de Graficos para el administrador con NivoCharts",
     ],
-    deploy: "https://www.viandaexpress.vercel.app",
+    deploy: "https://viandaexpress.vercel.app/",
     youtube:
       "https://www.youtube.com/watch?v=9LU6qFour2M&ab_channel=SilvioJuarez",
     repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
@@ -54,9 +54,8 @@ const dataRovalettiProjects = [
     tasks: [
       "Complete the entire full-stack application individually following the guidelines specified by Soy Henry",
     ],
-    deploy: "https://www.viandaexpress.vercel.app",
-    youtube:
-      "https://www.youtube.com/watch?v=9LU6qFour2M&ab_channel=SilvioJuarez",
+    deploy: "https://video-games-pi-vert.vercel.app",
+    youtube:null,
     repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
     image:videogamesPiImg,
   },
