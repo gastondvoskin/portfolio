@@ -52,10 +52,13 @@ const ProjectDetailModal = ({ project, onClose }) => {
             Deploy
           </a>
           <a
-            className="bg-gray-500 hover:bg-gray-600 text-white px-2 py-1 rounded-md text-sm mr-2"
+            className={`${
+              project.youtube === null ? "bg-gray-500 cursor-not-allowed" : "bg-gray-500 hover:bg-gray-600"
+            } text-white px-2 py-1 rounded-md text-sm mr-2`}
             href={project.youtube}
             target="_blank"
             rel="noopener noreferrer"
+            disabled={project.youtube === null}
           >
             Overview
           </a>
