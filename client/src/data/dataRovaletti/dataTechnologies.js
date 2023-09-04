@@ -1,28 +1,30 @@
-const dataTechnologiesLanguages = [
-  { name: "JavaScript" },
-  { name: "TypeScript" },
+const languages = [
+  "JavaScript" ,
+  "TypeScript" ,
 ];
-const dataTechnologiesFront = [
-  { name: "React" },
-  { name: "ReactNative" },
-  { name: "Redux" },
-  { name: "NextJS" },
-  { name: "Tailwind" },
-  { name: "MaterialUI" },
-  { name: "Bootrstrap" },
+const front = [
+  "React" ,
+  "Redux" ,
+  "NextJs",
+  "Tailwind" ,
+  "MaterialUI" ,
+  "Bootstrap" ,
 ];
-const dataTechnologiesBack = [
-  { name: "Node" },
-  { name: "Express" },
-  { name: "Sequelize" },
-  { name: "Prisma" },
+const back = [
+  "NodeJs" ,
+  "Express" ,
+  "Sequelize" ,
+  "Prisma" ,
 ];
-const dataTechnologiesDatabases = [{ name: "Postgres" }];
+const databases = [
+  "PostgreSQL",
+  "SQLite",
+  ];
 
 const dataRovalettiTechnologies = {
-  dataTechnologiesLanguages,
-  dataTechnologiesFront,
-  dataTechnologiesBack,
-  dataTechnologiesDatabases,
+  languages,
+  front, 
+  back,
+  databases,
 };
 export default dataRovalettiTechnologies;
