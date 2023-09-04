@@ -1,24 +1,28 @@
-const dataTechnologies = [
-  { name: "HTML" },
-  { name: "CSS" },
+const dataTechnologiesLanguages = [
   { name: "JavaScript" },
-  { name: "React" },
-  { name: "Node" },
-  { name: "Git" },
-  { name: "Auth0" },
-  { name: "Express" },
-  { name: "Figma" },
-  { name: "GitHub" },
-  { name: "MaterialUI" },
-  { name: "Postman" },
-  { name: "Postgres" },
-  { name: "Redux" },
-  { name: "Sequelize" },
-  { name: "Slack" },
-  { name: "Tailwind" },
-  { name: "Trello" },
-  { name: "Vercel" },
-  { name: "Visual" },
+  { name: "TypeScript" },
 ];
+const dataTechnologiesFront = [
+  { name: "React" },
+  { name: "ReactNative" },
+  { name: "Redux" },
+  { name: "NextJS" },
+  { name: "Tailwind" },
+  { name: "MaterialUI" },
+  { name: "Bootrstrap" },
+];
+const dataTechnologiesBack = [
+  { name: "Node" },
+  { name: "Express" },
+  { name: "Sequelize" },
+  { name: "Prisma" },
+];
+const dataTechnologiesDatabases = [{ name: "Postgres" }];
 
-export default dataTechnologies;
+const dataDvoskinTechnologies = {
+  dataTechnologiesLanguages,
+  dataTechnologiesFront,
+  dataTechnologiesBack,
+  dataTechnologiesDatabases,
+};
+export default dataDvoskinTechnologies;

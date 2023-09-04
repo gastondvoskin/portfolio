@@ -1,11 +1,12 @@
 import { Link } from "react-scroll";
 
-import { nameDvoskin } from "../data/dataDvoskin/dataContact";
-import { nameRovaletti } from "../data/dataRovaletti/dataContact";
+import { nameDvoskin, ROLE_DVOSKIN } from "../data/dataDvoskin/dataHome";
+import { nameRovaletti, ROLE_ROVALETTI }  from "../data/dataRovaletti/dataHome";
 
 const Home = () => {
   const dataOwner = import.meta.env.VITE_DATAOWNER;
   const name = dataOwner === "dvoskin" ? nameDvoskin : nameRovaletti;
+  const ROLE = dataOwner === "dvoskin" ? ROLE_DVOSKIN : ROLE_ROVALETTI;
 
   return (
     <section
@@ -19,7 +20,7 @@ const Home = () => {
           Welcome! My name is
         </h3>
         <h1 className={`${dataOwner==="dvoskin" ? "text-4xl" : "text-3xl"} mb-2 text-myacc dark:text-myaccd md:text-7xl xl:text-9xl`}>{name}</h1>
-        <h2 className="text-xl mb-32 md:text-4xl xl:text-6xl">Full-stack web developer</h2>
+        <h2 className="text-xl mb-32 md:text-4xl xl:text-6xl">{ROLE}</h2>
         <Link
           className="text-md px-7 cursor-pointer text-myacc dark:text-myaccd md:text-xl lg:text-3xl xl:text-4xl"
           to="about"

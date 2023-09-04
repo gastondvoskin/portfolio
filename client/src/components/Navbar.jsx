@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import { nameRovaletti } from "../data/dataRovaletti/dataContact";
-import { nameDvoskin } from "../data/dataDvoskin/dataContact";
+
+import { nameRovaletti } from "../data/dataRovaletti/dataNav";
+import { nameDvoskin } from "../data/dataDvoskin/dataNav";
+
 import dvoskin from "../assets/profileImage/dvoskin.jpg";
 import rovaletti from "../assets/profileImage/rovaletti.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -25,6 +27,8 @@ const Navbar = () => {
   const dataOwner = import.meta.env.VITE_DATAOWNER;
   const ownerName = dataOwner === "dvoskin" ? nameDvoskin : nameRovaletti;
   const ownerImg = dataOwner === "dvoskin" ? dvoskin : rovaletti;
+
+  console.log('dataOwner: ', dataOwner); 
 
   const [renderedMenu, setRenderedMenu] = useState(false);
 
