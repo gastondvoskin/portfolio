@@ -1,8 +1,7 @@
-const nameDvoskin = "Gastón Dvoskin";
 const dataDvoskinContact = {
     github: "https://github.com/gastondvoskin/",
     linkedin:"https://www.linkedin.com/in/gaston-dvoskin/",
     gmail:"dvoskingaston@gmail.com",
     telephoneNumber:"1156559234"
 }
-export { nameDvoskin,dataDvoskinContact };
+export { dataDvoskinContact };
