@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { animateScroll as scroll } from "react-scroll";
+import Nav_Logo from "./Nav_Logo"; 
 import Nav_Link from "../components/Nav_Link";
+import Nav_Themes from "./Nav_Themes";
+import Nav_Bars from "./Nav_Bars";
 
 import { nameRovaletti } from "../data/dataRovaletti/dataNav";
 import { nameDvoskin } from "../data/dataDvoskin/dataNav";
@@ -31,42 +33,15 @@ const Navbar = () => {
 
   const NAV_TEXTS = ["home", "about", "projects", "technologies", "contact"];
 
+  // console.log("window.innerWidth : ", window.innerWidth);
+  
   return (
     <nav className="flex flex-row justify-between items-center bg-white w-full h-16 text-black fixed border-b-4 border-solid border-black dark:bg-slate-900 dark:text-white">
-      {/* image and name */}
-      <button onClick={() => scroll.scrollToTop({ duration: 300 })}>
-        <div className="flex items-center ml-8">
-          <img
-            className="w-10 h-10 mr-2 rounded-full"
-            src={ownerImg}
-            alt={ownerName}
-          />
-          <span>{ownerName.toUpperCase()}</span>
-        </div>
-      </button>
-
-      {/* themes and bars */}
+      <Nav_Logo ownerImg={ownerImg} ownerName={ownerName}/>
+      
       <div>
-        {/* themes */}
-        <button
-          className="rounded-full bg-mybg2 w-7 h-7 dark:bg-mybg1d lg:hidden"
-          onClick={toggleDarkMode}
-        >
-          {darkMode ? (
-            <FontAwesomeIcon icon={faSun} />
-          ) : (
-            <FontAwesomeIcon icon={faMoon} />
-          )}
-        </button>
-
-        {/* bars */}
-        <button
-          className="mx-4 cursor-pointer lg:hidden"
-          onClick={handleRenderMenu}
-        >
-          {/* {renderedMenu ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />} */}
-          <FontAwesomeIcon icon={faBars} />
-        </button>
+        <Nav_Themes darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <Nav_Bars renderedMenu={renderedMenu} handleRenderMenu={handleRenderMenu} />
       </div>
 
       {/* links container for small devices*/}
