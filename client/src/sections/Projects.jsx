@@ -2,6 +2,7 @@ import { dataDvoskinProjects } from "../data/dataDvoskin/dataProjects";
 import { dataRovalettiProjects } from "../data/dataRovaletti/dataProjects";
 import ProjectDetailModal from "../components/ProjectDetailModal";
 import { useState } from "react";
+import Button from "../components/Button";
 
 const Projects = () => {
   const dataOwner = import.meta.env.VITE_DATAOWNER;
@@ -55,13 +56,9 @@ const Projects = () => {
                   <p className="text-sm font-sans mb-8 md:text-base">
                     {project.description}
                   </p>
-                  {/* button */}
-                  <button
-                    className="p-2 bg-myacc border-2 border-black text-white font-bold rounded-xl text-base dark:bg-myaccd dark:text-black"
-                    onClick={() => openProjectDetail(project)}
-                  >
-                    VIEW MORE
-                  </button>
+
+                  <Button text="VIEW MORE" type="text" icon="" onClickHandler={() => openProjectDetail(project)} />
+
                 </div>
               </div>
             );
