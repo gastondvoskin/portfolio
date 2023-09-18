@@ -5,10 +5,10 @@ import { faBars, faXmark, } from "@fortawesome/free-solid-svg-icons";
 const Nav_Bars = ({ handleRenderMenu, renderedMenu }) => {
   return (
     <button
-      className="mx-4 cursor-pointer lg:hidden"
+      className="cursor-pointer lg:hidden"
       onClick={handleRenderMenu}
     >
-      {renderedMenu ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}
+      {renderedMenu ? <FontAwesomeIcon icon={faXmark} className="z-50 top-0 left-0" /> : <FontAwesomeIcon icon={faBars} />}
     </button>
   );
 };
