@@ -42,35 +42,6 @@ const ProjectDetailModal = ({ project, onClose }) => {
             </p>
           </div>
         </div>
-        <div className="bg-gray-100 dark:bg-gray-700 py-3 px-6 flex justify-end">
-          <a
-            className="bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded-md text-sm mr-2"
-            href={project.deploy}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Deploy
-          </a>
-          <a
-            className={`${
-              project.youtube === null ? "bg-gray-500 cursor-not-allowed" : "bg-gray-500 hover:bg-gray-600"
-            } text-white px-2 py-1 rounded-md text-sm mr-2`}
-            href={project.youtube}
-            target="_blank"
-            rel="noopener noreferrer"
-            disabled={project.youtube === null}
-          >
-            Overview
-          </a>
-          <a
-            className="bg-gray-500 hover:bg-gray-600 text-white px-2 py-1 rounded-md text-sm"
-            href={project.repository}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Repository
-          </a>
-        </div>
       </div>
     </div>
   );

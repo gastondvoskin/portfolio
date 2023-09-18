@@ -2,6 +2,7 @@ import { dataDvoskinProjects } from "../data/dataDvoskin/dataProjects";
 import { dataRovalettiProjects } from "../data/dataRovaletti/dataProjects";
 import ProjectDetailModal from "../components/ProjectDetailModal";
 import { useState } from "react";
+import Anchor from "../components/Anchor";
 import Button from "../components/Button";
 
 const Projects = () => {
@@ -35,7 +36,7 @@ const Projects = () => {
         <div className="flex flex-col">
           {dataProjects.map((project, index) => {
             return (
-              /* h2 - image, description - button */ 
+              /* h2 - image, description - button */
               <div
                 key={index}
                 className="grid grid-cols-1 mb-16 items-center lg:grid-cols-2"
@@ -47,7 +48,11 @@ const Projects = () => {
                     {project.name}
                   </h2>
                   {/* image */}
-                  <img className="my-8" src={project.image} alt={project.name} />
+                  <img
+                    className="my-8"
+                    src={project.image}
+                    alt={project.name}
+                  />
                 </div>
 
                 {/* description - button */}
@@ -57,7 +62,15 @@ const Projects = () => {
                     {project.description}
                   </p>
 
-                  <Button text="VIEW MORE" type="text" icon="" onClickHandler={() => openProjectDetail(project)} />
+                  {project.deploy && <Anchor href={project.deploy} text="DEPLOY" />}
+                  {project.youtube && <Anchor href={project.youtube} text="OVERVIEW" />}
+                  {project.repository && <Anchor href={project.repository} text="REPOSITORY" />}
+
+                  <Button
+                    text="MORE"
+                    onClickHandler={() => openProjectDetail(project)}
+                  />
+
 
                 </div>
               </div>
