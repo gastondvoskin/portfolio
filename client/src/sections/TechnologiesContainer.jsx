@@ -20,7 +20,7 @@ const TechnologiesContainer = () => {
   return (
     <section
       className="flex flex-col w-full items-center pt-24 pb-24 bg-mybg2 dark:bg-mybg2d"
-      name="skills"
+      name="technologies"
     >
       <div className="flex flex-col w-4/5 items-center">
         

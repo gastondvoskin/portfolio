@@ -1,9 +1,9 @@
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 
-const Nav_Link = ({handleRenderMenu, to}) => {
+const Nav_Link = ({handleRenderMenu, to, margin}) => {
   return (
-    <Link onClick={handleRenderMenu} className="mx-4 cursor-pointer" to={to} smooth={true} duration={300}>{to.toUpperCase()}</Link>
+    <Link onClick={handleRenderMenu} className={`${margin} cursor-pointer`} to={to} smooth={true} duration={300}>{to.toUpperCase()}</Link>
   );
 };
 
