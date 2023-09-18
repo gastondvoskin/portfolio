@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 import Nav_Link from "../components/Nav_Link";
 
 import { nameRovaletti } from "../data/dataRovaletti/dataNav";
@@ -28,6 +28,8 @@ const Navbar = () => {
   const handleRenderMenu = () => {
     setRenderedMenu(!renderedMenu);
   };
+
+  const NAV_TEXTS = ["home", "about", "projects", "technologies", "contact"];
 
   return (
     <nav className="flex flex-row justify-between items-center bg-white w-full h-16 text-black fixed border-b-4 border-solid border-black dark:bg-slate-900 dark:text-white">
@@ -70,51 +72,7 @@ const Navbar = () => {
       {/* links container for small devices*/}
       <div className={`${renderedMenu ? "fixed" : "hidden"} lg:hidden inset-0 z-50 bg-mybg1 text-3xl dark:bg-mybg2d`}>
         <div className="flex flex-col h-full items-center justify-center">
-          <Link
-            onClick={handleRenderMenu}
-            className="my-4 cursor-pointer"
-            to="home"
-            smooth={true}
-            duration={300}
-          >
-            HOME
-          </Link>
-          <Link
-            onClick={handleRenderMenu}
-            className="my-4 cursor-pointer"
-            to="about"
-            smooth={true}
-            duration={300}
-          >
-            ABOUT
-          </Link>
-          <Link
-            onClick={handleRenderMenu}
-            className="my-4 cursor-pointer"
-            to="projects"
-            smooth={true}
-            duration={300}
-          >
-            PROJECTS
-          </Link>
-          <Link
-            onClick={handleRenderMenu}
-            className="my-4 cursor-pointer"
-            to="skills"
-            smooth={true}
-            duration={300}
-          >
-            TECHNOLOGIES
-          </Link>
-          <Link
-            onClick={handleRenderMenu}
-            className="my-4 cursor-pointer"
-            to="contact"
-            smooth={true}
-            duration={300}
-          >
-            CONTACT
-          </Link>
+          {NAV_TEXTS.map((text, index) => <Nav_Link key={index} handleRenderMenu={handleRenderMenu} to={text} margin="my-4" />)}
 
           <button
             className="my-8 cursor-pointer lg:hidden"
@@ -127,48 +85,9 @@ const Navbar = () => {
 
       {/* links container for large devices*/}
       <div className="hidden lg:flex items-center mr-8">
-        <Nav_Link handleRenderMenu={handleRenderMenu} to="home"/>
-        <Link
-          onClick={handleRenderMenu}
-          className="mx-4 cursor-pointer"
-          to="home"
-          smooth={true}
-          duration={300}
-        >
-          HOME
-        </Link>
-        <Link
-          className="mx-4 cursor-pointer"
-          to="about"
-          smooth={true}
-          duration={300}
-        >
-          ABOUT
-        </Link>
-        <Link
-          className="mx-4 cursor-pointer"
-          to="projects"
-          smooth={true}
-          duration={300}
-        >
-          PROJECTS
-        </Link>
-        <Link
-          className="mx-4 cursor-pointer"
-          to="skills"
-          smooth={true}
-          duration={300}
-        >
-          TECHNOLOGIES
-        </Link>
-        <Link
-          className="mx-4 cursor-pointer"
-          to="contact"
-          smooth={true}
-          duration={300}
-        >
-          CONTACT
-        </Link>
+        {NAV_TEXTS.map((text, index) => <Nav_Link key={index} handleRenderMenu={handleRenderMenu} to={text} margin="mx-4"/>)}
+        
+        
         <button
           className="ml-4 rounded-full bg-mybg2 w-10 h-10 dark:bg-mybg1d"
           onClick={toggleDarkMode}
