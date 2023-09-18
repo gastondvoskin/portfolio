@@ -8,7 +8,7 @@ const dataDvoskinProjects = [
   {
     name: "Vibi",
     description:
-      "Vibi is a startup committed to democratizing access to the first home in Peru.",
+      "Vibi is a startup committed to democratizing access to the first home in Peru. This web is under construction",
     technologies: [
       "TypeScript",
       "React",
@@ -24,8 +24,8 @@ const dataDvoskinProjects = [
     ],
     deploy: "https://vi-373evpjot-eugeniagramajo-s-team.vercel.app/home",
     youtube:
-      "https://www.youtube.com/watch?v=9LU6qFour2M&ab_channel=SilvioJuarez",
-    repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
+      "",
+    repository: "https://github.com/EugeniaGramajo/vibi",
     image: vibiImg,
   },
 
@@ -46,10 +46,10 @@ const dataDvoskinProjects = [
     tasks: [
       "Complete the entire full-stack application individually following the guidelines specified by Soy Henry",
     ],
-    deploy: "https://www.viandaexpress.vercel.app",
+    deploy: "https://videogameshub.vercel.app/",
     youtube:
-      "https://www.youtube.com/watch?v=9LU6qFour2M&ab_channel=SilvioJuarez",
-    repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
+      "https://www.youtube.com/watch?v=nJ4NmMCn320&t=3s&ab_channel=Gast%C3%B3nDvoskin",
+    repository: "https://github.com/gastondvoskin/PI-Videogames",
     image: videogameshubImg,
   },
 
@@ -110,7 +110,7 @@ const dataDvoskinProjects = [
   },
 
   {
-    name: "This portfolio!",
+    name: "Portfolio",
     description:
       "This portoflio was developed from scratch by Gastón Dvoskin and Santiago Rovaletti.",
     technologies: [
@@ -127,10 +127,10 @@ const dataDvoskinProjects = [
     tasks: [
 
     ],
-    deploy: "https://https://gaston-dvoskin.vercel.app/",
+    deploy: "https://gaston-dvoskin.vercel.app/",
     youtube:
       "",
-    repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
+    repository: "https://github.com/santirova/Portfolio",
     image: portfolioImg,
   },
 
