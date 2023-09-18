@@ -4,6 +4,7 @@ import dvoskin from "../assets/profileImage/dvoskin.jpg";
 import rovaletti from "../assets/profileImage/rovaletti.jpg";
 import cvDvoskin from "../assets/CV/Dvoskin.pdf";
 import cvRovaletti from "../assets/CV/SANTIAGO-ROVALETTI-CV.pdf";
+import Button from "../components/Button";
 
 const About = () => {
   const dataOwner = import.meta.env.VITE_DATAOWNER;
@@ -11,7 +12,7 @@ const About = () => {
   const profileImg = dataOwner === "dvoskin" ? dvoskin : rovaletti;
   const cvOwner = dataOwner === "dvoskin" ? cvDvoskin : cvRovaletti
 
-  /* className="grid grid-cols-2 m-10 */
+  
   return (
     <section
       name="about"
@@ -30,18 +31,15 @@ const About = () => {
           <div className="flex flex-col items-center">
             {/* image */}
             <img className="w-4/5 mb-8 md:w-1/2" src={profileImg} alt="Dvoskin" />{" "}
-            {/* CV buttons */}
-            <div className="flex flex-col">
-              <a
-                className="mb-12 p-2 bg-myacc border-2 border-black text-white font-bold rounded-xl text-base dark:bg-myaccd dark:text-black"
-                href={cvOwner}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                VIEW CV
-              </a>
-            </div>
+
+            <a
+              href={cvOwner}
+              download
+            >
+              <Button text="DOWNLOAD CV" type="button" icon="" onClickHandler=""/>
+            </a>
           </div>
+          
           {/* description */}
           <div className="lg:ml-16">
             {dataAbout.map((paragraph, index) => {

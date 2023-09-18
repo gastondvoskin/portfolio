@@ -1,9 +1,58 @@
 import videogameshubImg from "../../assets/projectsImages/videogameshubImg.png";
 import viandaexpressImg from "../../assets/projectsImages/viandaexpressImg.png";
 import brendadvoskinImg from "../../assets/projectsImages/brendadvoskinImg.png";
-
+import portfolioImg from "../../assets/projectsImages/portfolioImg.png";
+import vibiImg from "../../assets/projectsImages/vibiImg.png";
 
 const dataDvoskinProjects = [
+  {
+    name: "Vibi",
+    description:
+      "Vibi is a startup committed to democratizing access to the first home in Peru.",
+    technologies: [
+      "TypeScript",
+      "React",
+      "NextJS",
+      "Tailwind",
+      "Figma",
+      "NodeJs",
+      "Express",
+      "Prisma",
+    ],
+    tasks: [
+
+    ],
+    deploy: "https://vi-373evpjot-eugeniagramajo-s-team.vercel.app/home",
+    youtube:
+      "https://www.youtube.com/watch?v=9LU6qFour2M&ab_channel=SilvioJuarez",
+    repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
+    image: vibiImg,
+  },
+
+  {
+    name: "Videogames Hub",
+    description:
+      "Development of an individual full-stack application with the aim of rendering and filtering video games from an API and a proprietary database.",
+    technologies: [
+      "JavaScript",
+      "React",
+      "Redux",
+      "CSS",
+      "NodeJs",
+      "Express",
+      "PostgreSQL",
+      "Sequelize",
+    ],
+    tasks: [
+      "Complete the entire full-stack application individually following the guidelines specified by Soy Henry",
+    ],
+    deploy: "https://www.viandaexpress.vercel.app",
+    youtube:
+      "https://www.youtube.com/watch?v=9LU6qFour2M&ab_channel=SilvioJuarez",
+    repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
+    image: videogameshubImg,
+  },
+
   {
     name: "Vianda express",
     description:
@@ -40,29 +89,6 @@ const dataDvoskinProjects = [
     image: viandaexpressImg,
   },
 
-  {
-    name: "Videogames Hub",
-    description:
-      "Development of an individual full-stack application with the aim of rendering and filtering video games from an API and a proprietary database.",
-    technologies: [
-      "JavaScript",
-      "React",
-      "Redux",
-      "CSS",
-      "NodeJs",
-      "Express",
-      "PostgreSQL",
-      "Sequelize",
-    ],
-    tasks: [
-      "Complete the entire full-stack application individually following the guidelines specified by Soy Henry",
-    ],
-    deploy: "https://www.viandaexpress.vercel.app",
-    youtube:
-      "https://www.youtube.com/watch?v=9LU6qFour2M&ab_channel=SilvioJuarez",
-    repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
-    image: videogameshubImg,
-  },
 
   {
     name: "Brenda Dvoskin",
@@ -81,6 +107,31 @@ const dataDvoskinProjects = [
       "",
     repository: "https://github.com/gastondvoskin/Brenda-Dvoskin-Web.git",
     image: brendadvoskinImg,
+  },
+
+  {
+    name: "This portfolio!",
+    description:
+      "This portoflio was developed from scratch by Gastón Dvoskin and Santiago Rovaletti.",
+    technologies: [
+      "JavaScript",
+      "React",
+      "Tailwind",
+      "Font Awesome",
+      "NodeJs",
+      "Express",
+      "NodeMailer",
+      "PostgreSQL",
+      "Sequelize",
+    ],
+    tasks: [
+
+    ],
+    deploy: "https://https://gaston-dvoskin.vercel.app/",
+    youtube:
+      "",
+    repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
+    image: portfolioImg,
   },
 
   
