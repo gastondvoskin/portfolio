@@ -2,7 +2,7 @@ import { dataDvoskinAbout } from "../data/dataDvoskin/dataAbout";
 import { dataRovalettiAbout } from "../data/dataRovaletti/dataAbout";
 import dvoskin from "../assets/profileImage/dvoskin.jpg";
 import rovaletti from "../assets/profileImage/rovaletti.jpg";
-import cvDvoskin from "../assets/CV/Dvoskin.pdf";
+import cvDvoskin from "../assets/CV/Gastón_Dvoskin_Front-end_Developer.pdf";
 import cvRovaletti from "../assets/CV/SANTIAGO-ROVALETTI-CV.pdf";
 import Button from "../components/Button";
 
