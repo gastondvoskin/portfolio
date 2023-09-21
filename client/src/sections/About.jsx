@@ -36,7 +36,7 @@ const About = () => {
               href={cvOwner}
               download
             >
-              <Button text="DOWNLOAD CV" type="button" icon="" onClickHandler=""/>
+              <Button text="DOWNLOAD CV" type="button" icon="" />
             </a>
           </div>
           

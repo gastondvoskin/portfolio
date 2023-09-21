@@ -1,5 +1,4 @@
 const Button = ({ parent, text, type, icon, onClickHandler }) => {
-
   return (
     <button
       onClick={onClickHandler}
