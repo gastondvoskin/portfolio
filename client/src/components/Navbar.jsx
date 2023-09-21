@@ -7,7 +7,7 @@ import Nav_Bars from "./Nav_Bars";
 
 import { nameRovaletti } from "../data/dataRovaletti/dataNav";
 import { nameDvoskin } from "../data/dataDvoskin/dataNav";
-import dvoskin from "../assets/profileImage/dvoskin.jpg";
+import dvoskin from "../assets/profileImage/dvoskin.png";
 import rovaletti from "../assets/profileImage/rovaletti.jpg";
 
 const Navbar = () => {
