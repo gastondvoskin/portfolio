@@ -1,15 +1,10 @@
 import { dataDvoskinProjects } from "../data/dataDvoskin/dataProjects";
-import { dataRovalettiProjects } from "../data/dataRovaletti/dataProjects";
 import ProjectDetailModal from "../components/ProjectDetailModal";
 import { useState } from "react";
 import Anchor from "../components/Anchor";
 import Button from "../components/Button";
 
 const Projects = () => {
-  const dataOwner = import.meta.env.VITE_DATAOWNER;
-  const dataProjects =
-    dataOwner === "dvoskin" ? dataDvoskinProjects : dataRovalettiProjects;
-
   const [selectedProject, setSelectedProject] = useState(null);
 
   const openProjectDetail = (project) => {
@@ -30,7 +25,7 @@ const Projects = () => {
       <div className="flex flex-col w-4/5 items-center">
         <h1 className="mb-16 text-3xl font-bold text-myacc dark:text-myaccd md:text-5xl">PROJECTS</h1>
         <div className="flex flex-col">
-          {dataProjects.map((project, index) => {
+          {dataDvoskinProjects.map((project, index) => {
             return (
               /* left: h2 - image; right: description - buttons */
               <div
