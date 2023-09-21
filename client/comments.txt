@@ -1,0 +1,28 @@
+figma: https://www.figma.com/file/YDfWOSxTOv8HytsBIWfTsZ/maqueta-1?type=design&node-id=1-2&mode=design&t=ORV2CcFY0GCNyXxa-0
+Icons: https://simpleicons.org/
+
+proyectos:
+- https://react-tailwindcss-portfolio.netlify.app/
+- https://github.com/realstoman/react-tailwindcss-portfolio/tree/main
+
+- https://www.rammaheshwari.com
+- https://github.com/HX-FMontoya/simplefolio
+- https://caferati.me/ 
+
+Tailwind: https://tailwindcomponents.com/cheatsheet/
+
+
+
+Deploy: 
+https://santiagorovaletti.vercel.app/
+https://gaston-dvoskin.vercel.app/
+
+
+
+Next steps: 
+- Responsive Nav. 
+- Add a back-end to send an email when submitting the form. 
+- Move front-end into a client directory. Pay attention to the .gitignore for both back and front. 
+- axios.default. Use a differente environment variable for each deploy pointing to a different Railway back-end depending on the portfolio owner. 
+
+// checking. 
