@@ -1,8 +1,6 @@
 const Footer = () => {
-  const dataOwner = import.meta.env.VITE_DATAOWNER;
-  const authors = dataOwner === 'dvoskin' ? "Gastón Dvoskin & Santiago Rovaletti" : "Santiago Rovaletti & Gastón Dvoskin";
-
   const currentYear = new Date().getFullYear();
+  const authors = "Gastón Dvoskin & Santiago Rovaletti";
 
   return (
     <footer 
