@@ -24,3 +24,5 @@ Next steps:
 - Add a back-end to send an email when submitting the form. 
 - Move front-end into a client directory. Pay attention to the .gitignore for both back and front. 
 - axios.default. Use a differente environment variable for each deploy pointing to a different Railway back-end depending on the portfolio owner. 
+
+// checking. 
