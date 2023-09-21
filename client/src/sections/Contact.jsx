@@ -10,7 +10,7 @@ const Contact = () => {
     >
       <div className="flex flex-col items-center w-4/5 ">
       <h1 className="mb-16 text-3xl font-bold text-myacc dark:text-myaccd md:text-5xl">CONTACT</h1>
-        <p className="font-sans">{TEXT}</p>
+        <p className="font-sans max-w-3xl text-center">{TEXT}</p>
         <Form />
         <ContactIcons />
       </div>
