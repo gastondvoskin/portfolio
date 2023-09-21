@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios"; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'; 
+import Form_Input from "./Form_Input";
 
 const envelopeIcon = <FontAwesomeIcon icon={faEnvelope} />
 
@@ -15,7 +16,7 @@ const Form = () => {
   })
 
 
-  const [loading, setLoading] = useState(false);
+  const [sending, setSending] = useState(false);
 
   const onChange = (event) => {
     const { value, name } = event.target;
@@ -24,7 +25,7 @@ const Form = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
+    setSending(true);
 
     try {
       const response = await axios.post("/contact", inputs);
@@ -35,24 +36,23 @@ const Form = () => {
         message:""
       })
     } catch (error) {
-      alert("Error al enviar la consulta");
+      alert("An error occured.");
     } finally {
-      setLoading(false);
+      setSending(false);
     }
   };
+
   return (
     <div className="w-full lg:w-1/2">
 			<div className="leading-loose">
 				<form
 					onSubmit={onSubmit}
-					className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
+					className="max-w-xl m-4 p-6 sm:p-10 bg-mybg2 dark:bg-mybg2d rounded-xl shadow-xl text-left"
 				>
-					<p className="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8">
-						Contact Form
-					</p>
-          <div className="font-general-regular mb-4">
+          <Form_Input name="name" labelText="Full Name" value={inputs.name} onChange={onChange} placeHolder="Your name"/>
+          <div className="mb-4">
             <label
-              className="block text-lg text-primary-dark dark:text-primary-light mb-1"
+              className="block mb-1 text-lg text-black dark:text-white"
               htmlFor="name"
             >
               Full Name
@@ -60,7 +60,7 @@ const Form = () => {
             <input
               value={inputs.name}
               onChange={onChange}
-              className="w-full px-5 py-2 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md"
+              className="w-full px-5 py-2 bg-white text-black text-md border border-gray-300 border-opacity-50 rounded-md shadow-sm dark:bg-mybg1d dark:text-white dark:border-gray-500"
               type="text"
               id="name"
               name="name"
@@ -69,6 +69,7 @@ const Form = () => {
               required
             />
           </div>
+
           <div className="font-general-regular mb-4">
             <label
               className="block text-lg text-primary-dark dark:text-primary-light mb-1"
@@ -104,14 +105,16 @@ const Form = () => {
 							cols="14"
 							rows="6"
 							aria-label="Message"
-						></textarea>
+						>
+              Your message   
+            </textarea>
 					</div>
 
           <div className="font-general-medium w-40 px-4 py-2.5 text-white text-center font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg mt-6 duration-500">
             <button
               type="submit"
             >
-              {loading ? (
+              {sending ? (
                 "loading"
               ) : (
                 <div>
