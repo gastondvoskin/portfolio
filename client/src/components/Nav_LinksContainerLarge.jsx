@@ -7,6 +7,7 @@ const Nav_LinksContainerLarge = ({ NAV_TEXTS, setCurrentSection, currentSection 
         {NAV_TEXTS.map((text, index) => (
           <Nav_Link key={index} to={text} onClick={() => setCurrentSection(text)} isCurrent={currentSection === text} />
         ))}
+        <Nav_Link cv={true}/> 
       </div>
     </div>
   )
