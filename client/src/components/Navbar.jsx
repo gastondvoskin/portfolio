@@ -23,6 +23,8 @@ const Navbar = () => {
   const ownerName = dataOwner === "dvoskin" ? nameDvoskin : nameRovaletti;
   const ownerImg = dataOwner === "dvoskin" ? dvoskin : rovaletti;
 
+  const [ currentSection, setCurrentSection ] = useState("home"); 
+
   const [renderedMenu, setRenderedMenu] = useState(false);
   const handleRenderMenu = () => {
     setRenderedMenu(!renderedMenu);
@@ -36,9 +38,20 @@ const Navbar = () => {
       <Nav_Logo id="leftContainer" ownerImg={ownerImg} ownerName={ownerName}/>
 
       <div id="rightContainer" className="flex flex-row relative">
-        <Nav_LinksContainerSmall handleRenderMenu={handleRenderMenu} renderedMenu={renderedMenu} NAV_TEXTS={NAV_TEXTS} className="lg:hidden"/>
-        <Nav_LinksContainerLarge NAV_TEXTS={NAV_TEXTS}/>
+        <Nav_LinksContainerSmall setCurrentSection={setCurrentSection} currentSection={currentSection} handleRenderMenu={handleRenderMenu} renderedMenu={renderedMenu} NAV_TEXTS={NAV_TEXTS} className="lg:hidden"/>
+
+
+        <Nav_LinksContainerLarge setCurrentSection={setCurrentSection} currentSection={currentSection} NAV_TEXTS={NAV_TEXTS} />
+
+
+
         <Nav_Bars renderedMenu={renderedMenu} handleRenderMenu={handleRenderMenu} />
+
+
+
+
+
+
         <Nav_Themes darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </div>
     </nav>

@@ -1,8 +1,17 @@
 import { Link } from "react-scroll";
 
-const Nav_Link = ({handleRenderMenu, to}) => {
+const Nav_Link = ({ onClick, to, isCurrent }) => {
+
   return (
-    <Link onClick={handleRenderMenu} className={"my-4 cursor-pointer lg:my-auto lg:mx-4"} to={to} smooth={true} duration={300}>{to.toUpperCase()}</Link>
+    <Link
+      onClick={onClick}
+      className={`my-4 cursor-pointer hover:text-myacc lg:my-auto lg:mx-4 ${isCurrent ? "text-myacc" : ""}`}
+      to={to}
+      smooth={true}
+      duration={300}
+    >
+      {to.toUpperCase()}
+    </Link>
   );
 };
 
