@@ -3,6 +3,7 @@ import ProjectDetailModal from "../components/ProjectDetailModal";
 import { useState } from "react";
 import Anchor from "../components/Anchor";
 import Button from "../components/Button";
+import SectionContainer from "../components/SectionContainer";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -18,10 +19,7 @@ const Projects = () => {
   };
 
   return (
-    <section
-      name="projects"
-      className="flex flex-col w-full items-center pt-24 pb-24 bg-mybg1 dark:bg-mybg1d"
-    >
+    <SectionContainer name="projects" bgNumber={1}>
       <div className="flex flex-col w-4/5 items-center">
         <h1 className="mb-16 text-3xl font-bold text-myacc dark:text-myaccd md:text-5xl">PROJECTS</h1>
         <div className="flex flex-col">
@@ -59,8 +57,8 @@ const Projects = () => {
         </div>
       </div>
 
+    </SectionContainer>
       
-    </section>
   );
 };
 
