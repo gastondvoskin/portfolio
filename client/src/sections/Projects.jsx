@@ -4,6 +4,7 @@ import { useState } from "react";
 import Anchor from "../components/Anchor";
 import Button from "../components/Button";
 import SectionContainer from "../components/SectionContainer";
+import Title from "../components/Title";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -21,7 +22,8 @@ const Projects = () => {
   return (
     <SectionContainer name="projects" bgNumber={1}>
       <div className="flex flex-col w-4/5 items-center">
-        <h1 className="mb-16 text-3xl font-bold text-myacc dark:text-myaccd md:text-5xl">PROJECTS</h1>
+        <Title text="PROJECTS"/>
+
         <div className="flex flex-col">
           {dataDvoskinProjects.map((project, index) => {
             return (
