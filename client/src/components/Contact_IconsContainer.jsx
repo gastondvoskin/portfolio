@@ -6,13 +6,12 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { SiWhatsapp } from "react-icons/si";
 
 
-const ContactIcons = () => {
+const Contact_IconsContainer = () => {
   const dataContact = dataDvoskinContact;
   const WHATSAPP_MESSAGE =
     "ENGLISH: Hi! I saw your portfolio. My name is...\n ESPAÑOL: Hola! He visto tu portfolio. Mi nombre es...";
   const encodedMessage = encodeURIComponent(WHATSAPP_MESSAGE);
   const WHATSAPP_URL = `https://wa.me/${dataContact.telephoneNumber}?text=${encodedMessage}`;
-
 
   return (
     <section className="flex justify-center items-center">
@@ -24,4 +23,4 @@ const ContactIcons = () => {
   );
 };
 
-export default ContactIcons;
+export default Contact_IconsContainer;

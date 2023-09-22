@@ -1,4 +1,4 @@
-const Form_Input = ({ Element, name, labelText, value, onChange, placeholder }) => {
+const Contact_Form_Input = ({ Element, name, labelText, value, onChange, placeholder }) => {
   const sharedAttributes = {
     value,
     onChange,
@@ -24,4 +24,4 @@ const Form_Input = ({ Element, name, labelText, value, onChange, placeholder }) 
   );
 };
 
-export default Form_Input;
+export default Contact_Form_Input;
