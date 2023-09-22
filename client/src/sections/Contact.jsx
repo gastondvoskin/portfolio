@@ -1,6 +1,7 @@
 import Form from "../components/Form";
 import ContactIcons from "../components/ContactIcons";
 import SectionContainer from "../components/SectionContainer";
+import Title from "../components/Title";
 
 const Contact = () => {
   const TEXT =
@@ -10,9 +11,7 @@ const Contact = () => {
 
     <SectionContainer name="contact" bgNumber={1}>
       <div className="flex flex-col items-center w-4/5 ">
-        <h1 className="mb-16 text-3xl font-bold text-myacc dark:text-myaccd md:text-5xl">
-          CONTACT
-        </h1>
+        <Title text="CONTACT"/>
         <p className="font-sans max-w-3xl text-center">{TEXT}</p>
         <Form />
         <ContactIcons />

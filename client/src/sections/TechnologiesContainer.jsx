@@ -1,6 +1,7 @@
 import dataDvoskinTechnologies from "../data/dataDvoskin/dataTechnologies";
 import TechnologiesArticle from "../components/TechnologiesArticle";
 import SectionContainer from "../components/SectionContainer";
+import Title from "../components/Title";
 
 const TechnologiesContainer = () => {
 
@@ -14,9 +15,7 @@ const TechnologiesContainer = () => {
   return (
     <SectionContainer name="technologies" bgNumber={2}>
       <div className="flex flex-col w-4/5 items-center">  
-        <h1 className="mb-16 text-3xl font-bold text-myacc dark:text-myaccd md:text-5xl">
-          TECHNOLOGIES
-        </h1>
+        <Title text="TECHNOLOGIES"/>
         {technologies.map((element, index) => {
           return <TechnologiesArticle key={index} label={element.label} technologiesArray={element.technologiesArray} />;
         })}
