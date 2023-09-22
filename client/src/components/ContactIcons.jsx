@@ -1,8 +1,8 @@
-import github from "../assets/contactIcons/github.svg";
 import linkedin from "../assets/contactIcons/linkedin-color.svg";
 import gmail from "../assets/contactIcons/gmail-color.svg";
 import whatsapp from "../assets/contactIcons/whatsapp-color.svg";
 import { dataDvoskinContact } from "../data/dataDvoskin/dataContact";
+import { FaGithub } from "react-icons/fa";
 
 const ContactIcons = () => {
   const dataContact = dataDvoskinContact;
@@ -15,11 +15,10 @@ const ContactIcons = () => {
   return (
     <main className="grid grid-cols-2 justify-center items-center dark:rounded-3xl lg:grid-cols-4">
       {/* github */}
-      <a className="w-16 h-16 mx-10 my-4 lg:my-0" href={dataContact.github} target="_blank">
-        <div className="bg-white rounded-md">
-          <img className="p-1" src={github} alt="GitHub" />
-        </div>
+      <a className="" href={dataContact.github} target="_blank">
+        <FaGithub size={60} className="text-black dark:text-white"/>
       </a>
+
       {/* linkedin */}
       <a
         className="w-16 h-16 mx-10 my-4 lg:my-0"
