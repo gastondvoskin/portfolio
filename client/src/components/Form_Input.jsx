@@ -2,7 +2,7 @@ const Form_Input = ({ Element, name, labelText, value, onChange, placeholder }) 
   const sharedAttributes = {
     value,
     onChange,
-    className: "w-full px-5 py-2 bg-white text-black text-md border border-gray-300 border-opacity-50 rounded-md shadow-sm dark:bg-mybg1d dark:text-white dark:border-gray-500",
+    className: "w-full mt-2 px-5 py-2 bg-white text-black text-md border border-gray-300 border-opacity-50 rounded-md shadow-sm dark:bg-mybg1d dark:text-white dark:border-gray-500",
     id: name,
     name,
     placeholder,
@@ -11,14 +11,14 @@ const Form_Input = ({ Element, name, labelText, value, onChange, placeholder }) 
   };
 
   return (
-    <div className={`mb-4 ${Element === "textarea" ? "mt-10" : ""}`}>
-      <label className="mb-1 text-lg text-black dark:text-white" htmlFor={name}>
+    <div className={`mb-4 ${Element === "textarea" ? "mt-4" : ""}`}>
+      <label className="text-lg text-black dark:text-white" htmlFor={name}>
         {labelText}
       </label>
       {Element === "input" ? (
         <input {...sharedAttributes} type="text" />
       ) : (
-        <textarea {...sharedAttributes} rows={5} />
+        <textarea {...sharedAttributes} rows={4} />
       )}
     </div>
   );
