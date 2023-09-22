@@ -1,14 +1,12 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { WiMoonAltThirdQuarter } from 'react-icons/wi'; 
 
-
-const Nav_Themes = ({ darkMode, toggleDarkMode }) => {
+const Nav_Themes = ({ toggleDarkMode }) => {
   return (
     <button
-      className="mx-8 rounded-full bg-mybg2 w-7 h-7 dark:bg-mybg1d"
+      className="mx-8 bg-transparent hover:bg-mybg2 dark:hover:bg-mybg2d"
       onClick={toggleDarkMode}
     >
-      {darkMode ? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon} />}
+      <WiMoonAltThirdQuarter />
     </button>
   );
 };
