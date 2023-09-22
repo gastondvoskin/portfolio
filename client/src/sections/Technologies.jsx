@@ -1,5 +1,4 @@
 import dataDvoskinTechnologies from "../data/dataDvoskin/dataTechnologies";
-// import TechnologiesArticle from "../components/TechnologiesArticle";
 import SectionContainer from "../components/SectionContainer";
 import Title from "../components/Title";
 import Techs_ByType from "../components/Techs_ByType";
