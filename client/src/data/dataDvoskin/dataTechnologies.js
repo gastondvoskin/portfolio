@@ -1,30 +1,12 @@
-const languages = [
-  "JavaScript" ,
-  "TypeScript" ,
-];
-const front = [
-  "React" ,
-  "Redux" ,
-  "NextJs",
-  "Tailwind" ,
-  "MaterialUI" ,
-  "Bootstrap" ,
-];
-const back = [
-  "NodeJs" ,
-  "Express" ,
-  "Sequelize" ,
-  "Prisma" ,
-];
-const databases = [
-  "PostgreSQL",
-  "SQLite",
-  ];
-
 const dataDvoskinTechnologies = {
-  languages,
-  front, 
-  back,
-  databases,
+    Languages: ["JavaScript", "TypeScript"], 
+    Front: ["React", "Redux", "NextJs", "Tailwind", "MaterialUI", "Bootstrap"], 
+    Back: ["NodeJs", "Express", "Sequelize"], 
+    Databases: ["PostgreSQL"]
 };
+
 export default dataDvoskinTechnologies;
+
+
+
+
