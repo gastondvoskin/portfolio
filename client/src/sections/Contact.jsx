@@ -1,5 +1,5 @@
-import Form from "../components/Form";
-import ContactIcons from "../components/ContactIcons";
+import Contact_Form from "../components/Contact_Form";
+import Contact_IconsContainer from "../components/Contact_IconsContainer";
 import SectionContainer from "../components/SectionContainer";
 import Title from "../components/Title";
 
@@ -13,8 +13,8 @@ const Contact = () => {
       <div className="flex flex-col items-center w-4/5 ">
         <Title text="CONTACT"/>
         <p className="font-sans max-w-3xl text-center">{TEXT}</p>
-        <Form />
-        <ContactIcons />
+        <Contact_Form />
+        <Contact_IconsContainer />
       </div>
     </SectionContainer>
   );

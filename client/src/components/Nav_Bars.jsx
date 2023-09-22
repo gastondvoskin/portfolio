@@ -1,14 +1,13 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-
+import { FaBars } from "react-icons/fa6"; 
+import { FaXmark } from "react-icons/fa6"; 
 
 const Nav_Bars = ({ handleRenderMenu, renderedMenu }) => {
   return (
     <button
-      className="cursor-pointer lg:hidden"
+      className="bg-mybg2 cursor-pointer rounded-full p-2 dark:bg-mybg2 lg:hidden "
       onClick={handleRenderMenu}
     >
-      {renderedMenu ? <FontAwesomeIcon icon={faXmark} className="z-50 top-0 left-0" /> : <FontAwesomeIcon icon={faBars} />}
+      {renderedMenu ? <FaXmark className="z-50 top-0 left-0" /> : <FaBars size={14} className="text-myacc" />}
     </button>
   );
 };

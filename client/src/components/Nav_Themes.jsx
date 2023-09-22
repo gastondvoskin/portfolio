@@ -1,13 +1,12 @@
 import { WiMoonAltThirdQuarter } from 'react-icons/wi'; 
 
-const Nav_Themes = ({ darkMode, toggleDarkMode }) => {
-  console.log(darkMode)
+const Nav_Themes = ({ /* darkMode,  */toggleDarkMode }) => {
   return (
     <button
       className="mx-8 bg-transparent duration-700 transform transition-transform rotate-0 hover:rotate-180"
       onClick={toggleDarkMode}
     >
-      <WiMoonAltThirdQuarter size={25} color="#6366f1" />
+      <WiMoonAltThirdQuarter size={33} color="#6366f1" />
     </button>
   );
 };
