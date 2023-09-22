@@ -1,4 +1,4 @@
-import icons from "../assets/technologyIcons/indexIcons"; // Importa el objeto con todas las imágenes SVG
+import icons from "../assets/technologyIcons/indexIcons"; 
 
 const TechnologiesArticle = ({ label, technologiesArray }) => {
   return (
