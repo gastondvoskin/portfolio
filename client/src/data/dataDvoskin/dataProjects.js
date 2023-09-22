@@ -8,7 +8,7 @@ const dataDvoskinProjects = [
   {
     name: "Vibi",
     description:
-      "Vibi is a startup committed to democratizing access to the first home in Peru. This web is under construction",
+      "Vibi is a startup dedicated to democratizing access to first homes in Peru. During my internship at Vibi, I served as a Front-end Developer, responsible for rendering the 'Comprar' section. This section encompasses property listings, their details, and various filters. Please note that this website is currently under construction.",
     technologies: ["TypeScript", "React", "NextJS", "Tailwind", "Figma", "NodeJs", "Express", "Prisma"],
     deploy: "https://vibi.vercel.app",
     youtube: "",
@@ -43,7 +43,7 @@ const dataDvoskinProjects = [
   {
     name: "Brenda Dvoskin",
     description:
-      "Front-end development of Brenda Dvoskin's portfolio, Doctor in Law graduated from Harvard Law School",
+      "Front-end development of Brenda Dvoskin's portfolio, Doctor in Law graduated from Harvard Law School.",
     technologies: ["JavaScript", "React", "CSS"],
     deploy: "",
     youtube: "",
@@ -54,7 +54,7 @@ const dataDvoskinProjects = [
   {
     name: "Portfolio",
     description:
-      "This portoflio was developed from scratch by Gastón Dvoskin and Santiago Rovaletti.",
+      "Santiago Rovaletti and I collaborated in the development of this portfolio, achieving the rendering and deployment of two distinct portfolios from a single repository. After establishing the fundamental structure, we each took charge of personalizing our respective portfolios to reflect our individual styles and preferences.",
     technologies: ["JavaScript", "React", "Tailwind", "Font Awesome", "NodeJs", "Express", "NodeMailer", "PostgreSQL", "Sequelize"],
     deploy: "https://gastondvoskin.com/",
     youtube: "",

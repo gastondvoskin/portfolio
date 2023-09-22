@@ -24,7 +24,7 @@ const Projects = () => {
       <Title text="PROJECTS"/>
       {dataDvoskinProjects.map((project, index) => {
         return (
-          <div key={index} className="flex flex-col mb-16 items-center w-1/2 ">
+          <div key={index} className="flex flex-col mb-32 items-center w-1/2 ">
             <h2 className="mb-4 text-2xl font-bold md:text-4xl">{project.name}</h2>
             <img className="my-8 border-4 border-white" src={project.image} alt={project.name}/>
             <p className="text-sm font-sans mb-8 md:text-base">{project.description}</p>
