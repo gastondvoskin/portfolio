@@ -6,9 +6,13 @@ const About = () => {
   return (
     <section
       name="about"
-      className="flex flex-col w-full items-center pt-24 pb-24 bg-mybg2 dark:bg-mybg2d"
+      className="flex flex-col w-full items-center pt-24 pb-24 bg-mybg2 dark:bg-mybg2d relative"
     >
-      <div className="flex flex-col w-3/5 items-center">
+      <div className="absolute inset-0 w-full h-full">
+        <div className="bg-mybg2 transform skew-y-6 origin-top-right h-full w-full dark:bg-mybg2d"></div>
+      </div>
+
+      <div className="flex flex-col w-3/5 items-center z-10">
         <h1 className="mb-16 text-3xl font-bold text-myacc dark:text-myaccd md:text-5xl">
           ABOUT
         </h1>

@@ -27,7 +27,7 @@ const Navbar = () => {
 
   
   return (
-    <nav className="flex flex-row justify-between items-center bg-white w-full h-20 text-black fixed border-b-4 border-solid border-black dark:bg-slate-900 dark:text-white">
+    <nav className="flex flex-row justify-between items-center bg-white w-full h-20 text-black fixed border-b-4 border-solid border-black dark:bg-slate-900 dark:text-white z-20">
       <Nav_Logo id="leftContainer" />
 
       <div id="rightContainer" className="flex flex-row relative">
