@@ -28,7 +28,7 @@ const Projects = () => {
             <h2 className="mb-4 text-2xl font-bold md:text-4xl">{project.name}</h2>
             <img className="my-8 border-4 border-white" src={project.image} alt={project.name}/>
             <p className="text-sm font-sans mb-8 md:text-base">{project.description}</p>
-            <div id="buttons" className="flex">
+            <div id="buttons" className="flex gap-6">
               {project.deploy && <Anchor href={project.deploy} text="DEPLOY" />}
               {project.youtube && <Anchor href={project.youtube} text="OVERVIEW" />}
               {project.repository && <Anchor href={project.repository} text="REPOSITORY" />}
