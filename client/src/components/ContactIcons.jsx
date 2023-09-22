@@ -1,52 +1,39 @@
-import linkedin from "../assets/contactIcons/linkedin-color.svg";
-import gmail from "../assets/contactIcons/gmail-color.svg";
-import whatsapp from "../assets/contactIcons/whatsapp-color.svg";
 import { dataDvoskinContact } from "../data/dataDvoskin/dataContact";
 import { FaGithub } from "react-icons/fa";
+import { BiLogoGmail } from "react-icons/bi";
+import { SiGmail } from "react-icons/si";
+import { BiLogoLinkedinSquare } from "react-icons/bi";
+import { FaLinkedinIn } from "react-icons/fa";
+import { SiWhatsapp } from "react-icons/si";
+
 
 const ContactIcons = () => {
   const dataContact = dataDvoskinContact;
   const WHATSAPP_MESSAGE =
-    "Hi! My name is...\nI saw your online portfolio. I would like to contact you...\nThanks in advance!";
+    "Hi! I saw your portfolio. \nMy name is...";
   const encodedMessage = encodeURIComponent(WHATSAPP_MESSAGE);
   const WHATSAPP_URL = `https://wa.me/${dataContact.telephoneNumber}?text=${encodedMessage}`;
 
 
   return (
-    <main className="grid grid-cols-2 justify-center items-center dark:rounded-3xl lg:grid-cols-4">
-      {/* github */}
-      <a className="" href={dataContact.github} target="_blank">
-        <FaGithub size={60} className="text-black dark:text-white"/>
+    <section className="grid grid-cols-2 justify-center items-center dark:rounded-3xl lg:grid-cols-4">
+      <a href={dataContact.github} target="_blank">
+        <FaGithub size={60} className="text-gray-700 dark:text-gray-200"/>
       </a>
 
-      {/* linkedin */}
-      <a
-        className="w-16 h-16 mx-10 my-4 lg:my-0"
-        href={dataContact.linkedin}
-        target="_blank"
-      >
-        <div className="bg-white rounded-md">
-          <img className="p-1" src={linkedin} alt="LinkedIn" />
-        </div>
+      <a href={`mailto:${dataContact.gmail}`} target="_blank">
+        <BiLogoGmail size={74} className="text-red-500"/>
       </a>
-      {/* gmail */}
-      <a
-        className="w-16 h-16 mx-10 my-4 lg:my-0"
-        href={`mailto:${dataContact.gmail}`}
-        target="_blank"
-      >
-        <div className="bg-white rounded-md">
-          <img className="p-1" src={gmail} alt="Gmail" />
-        </div>
-      </a>
-      {/* whatsapp */}
 
-      <a className="w-16 h-16 mx-10 my-4 lg:my-0" href={WHATSAPP_URL} target="_blank">
-        <div className="bg-white rounded-md">
-          <img className="p-1" src={whatsapp} alt="Whatsapp" />
-        </div>
+      <a href={dataContact.linkedin} target="_blank">
+        <FaLinkedinIn size={74} className="text-blue-800 dark:text-blue-400"/>
       </a>
-    </main>
+
+      <a href={WHATSAPP_URL} target="_blank">
+        <SiWhatsapp size={60} className="text-green-600" />
+      </a>
+
+    </section>
   );
 };
 
