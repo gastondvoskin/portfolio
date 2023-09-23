@@ -23,16 +23,17 @@ const Projects = () => {
     <SectionContainer name="projects" bgNumber={1}>
       <Title text="PROJECTS"/>
       {dataDvoskinProjects.map((project, index) => {
+        
         return (
-          <div key={index} className="flex flex-col mb-32 items-center w-1/2 ">
-            <h2 className="mb-4 text-2xl font-bold md:text-4xl">{project.name}</h2>
-            <img className="my-8 border-4 border-white" src={project.image} alt={project.name}/>
-            <p className="text-sm font-sans mb-8 md:text-base">{project.description}</p>
-            <div id="buttons" className="flex gap-6">
-              {project.deploy && <Anchor href={project.deploy} text="DEPLOY" />}
+          <div key={index} className="flex flex-col px-4 mb-16 md:mb-20 items-center text-centermd:w-4/5 lg:w-3/4 ">
+            <h2 className="text-2xl font-bold md:text-4xl md:mb-3">{project.name}</h2>
+            <img className="my-2 border-2 border-white" src={project.image} alt={project.name}/>
+            <p className="text-xs font-sans md:text-base md:mb-2">{project.description}</p>
+            <div id="buttons" className="flex flex-row gap-x-2 md:gap-x-6 lg:gap-x-10">
+              {project.deploy && <Anchor href={project.deploy} text="VIEW" />}
               {project.youtube && <Anchor href={project.youtube} text="OVERVIEW" />}
-              {project.repository && <Anchor href={project.repository} text="REPOSITORY" />}
-              <Button text="TECHNOLOGIES" onClickHandler={() => openProjectDetail(project)} />
+              {project.repository && <Anchor href={project.repository} text="REPO" />}
+              {/* <Button text="TECH" onClickHandler={() => openProjectDetail(project)} /> */}
             </div>
 
           </div>

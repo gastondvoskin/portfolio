@@ -7,9 +7,8 @@ import Title from "../components/Title";
 const About = () => {
   return (
     <SectionContainer name="about" bgNumber={2}>
-      <div className="flex flex-col px-4 items-center z-10 md:w-4/5 lg:w-3/4">
-        <Title text="ABOUT"/>
-
+      <Title text="ABOUT"/>
+      <div className="flex flex-col px-4 items-center md:w-4/5 lg:w-3/4">
         <div className="flex flex-col items-center">
           {dataDvoskinAbout.map((paragraph, index) => {
             return (
