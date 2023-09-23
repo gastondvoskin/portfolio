@@ -40,23 +40,23 @@ const dataDvoskinProjects = [
     image: viandaexpressImg,
   },
 
-  {
-    name: "Brenda Dvoskin",
-    description:
-      "Front-end development of Brenda Dvoskin's portfolio, Doctor in Law graduated from Harvard Law School.",
-    technologies: ["JavaScript", "React", "CSS"],
-    deploy: "",
-    youtube: "",
-    repository: "https://github.com/gastondvoskin/Brenda-Dvoskin-Web.git",
-    image: brendadvoskinImg,
-  },
+  // {
+  //   name: "Brenda Dvoskin",
+  //   description:
+  //     "Front-end development of Brenda Dvoskin's portfolio, Doctor in Law graduated from Harvard Law School.",
+  //   technologies: ["JavaScript", "React", "CSS"],
+  //   deploy: "",
+  //   youtube: "",
+  //   repository: "https://github.com/gastondvoskin/Brenda-Dvoskin-Web.git",
+  //   image: brendadvoskinImg,
+  // },
 
   {
     name: "Portfolio",
     description:
-      "Santiago Rovaletti and I collaborated in the development of this portfolio, achieving the rendering and deployment of two distinct portfolios from a single repository. After establishing the fundamental structure, we each took charge of personalizing our respective portfolios to reflect our individual styles and preferences.",
+      "Feel free to explore the repository housing my portfolio and discover the technologies I employed to build it. The portfolio offers a glimpse into my background, including a self-description, a showcase of my projects, the key technologies I utilize, along with my contact information and CV. This project features both a light and dark theme, ensuring a visually appealing experience across all devices with complete responsiveness.",
     technologies: ["JavaScript", "React", "Tailwind", "Font Awesome", "NodeJs", "Express", "NodeMailer", "PostgreSQL", "Sequelize"],
-    deploy: "https://gastondvoskin.com/",
+    // deploy: "https://gastondvoskin.com/",
     youtube: "",
     repository: "https://github.com/gastondvoskin/portfolio",
     image: portfolioImg,
