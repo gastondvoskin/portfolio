@@ -9,8 +9,8 @@ import Technologies from "./sections/Technologies";
 function App() {
   return (
     <div className="flex flex-col items-center text-mytext text-lg font-serif dark:text-mytextd">
-      <Home />
       <Navbar />
+      <Home />
       <About />
       <Projects />
       <Technologies />

@@ -4,10 +4,10 @@ import { FaXmark } from "react-icons/fa6";
 const Nav_Bars = ({ handleRenderMenu, renderedMenu }) => {
   return (
     <button
-      className="bg-mybg2 cursor-pointer rounded-full p-2 dark:bg-mybg2 lg:hidden "
+      className="cursor-pointer ml-4 lg:hidden"
       onClick={handleRenderMenu}
     >
-      {renderedMenu ? <FaXmark className="z-50 top-0 left-0" /> : <FaBars size={14} className="text-myacc" />}
+      {renderedMenu ? <FaXmark className="z-50 top-0 left-0" /> : <FaBars className="text-myacc text-2xl lg:text-3xl" />}
     </button>
   );
 };
