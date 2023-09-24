@@ -45,10 +45,10 @@ const Contact_Form = () => {
   return (
     <form
       onSubmit={onSubmit}
-      className="flex flex-col w-full lg:w-1/2 mt-6 mb-20 p-6 sm:p-10 bg-mybg2 dark:bg-mybg2d rounded-xl shadow-xl"
+      className="flex flex-col w-full mt-6 mb-20 p-2 md:p-10 bg-mybg2 dark:bg-mybg2d rounded-md shadow-xl"
     >
-      <Contact_Form_Input Element="input" name="name" labelText="Full Name" value={inputs.name} onChange={onChange} placeholder="Your name"/>
-      <Contact_Form_Input Element="input" name="email" labelText="Email" value={inputs.email} onChange={onChange} placeholder="Your email"/>
+      <Contact_Form_Input Element="input" name="name" labelText="Name" value={inputs.name} onChange={onChange} placeholder="Your name"/>
+      <Contact_Form_Input Element="input" name="email" labelText="Email" value={inputs.email} onChange={onChange} placeholder="Your email"/>    
       <Contact_Form_Input Element="textarea" name="message" labelText="Message" value={inputs.message} onChange={onChange} placeholder="Your message" />
       <Button parent="form" text={sending ? "SENDING..." : "SEND"} type="submit" icon={envelopeIcon} onClickHandler={() => {}} />
     </form>

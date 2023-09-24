@@ -1,9 +1,10 @@
 const Button = ({ parent, text, type, icon, onClickHandler }) => {
+  console.log("Parent:", parent);
   return (
     <button
       onClick={onClickHandler}
       type={type}
-      className={`px-2 py-1 text-white text-center bg-myacc hover:bg-indigo-600 rounded-lg mt-6 duration-300 mx-auto shadow-sm shadow-black ${parent === "form" ? "px-4 py-2" : ""} dark:shadow-white`} 
+      className={`mt-6 mx-auto px-2 py-1 text-base text-center bg-myacc text-white hover:bg-indigo-600 rounded-sm duration-300 shadow-sm shadow-black dark:shadow-white lg:px-4 lg:py-2 lg:text-xl ${parent === "form" ? "mt-2 mb-3 lg:mb-0" : ""} `} 
     >
       {icon && <span className="mr-2">{icon}</span>}
       <span>{text}</span>

@@ -10,9 +10,9 @@ const Contact = () => {
   return (
 
     <SectionContainer name="contact" bgNumber={1}>
-      <div className="flex flex-col items-center w-4/5 ">
-        <Title text="CONTACT"/>
-        <p className="font-sans max-w-3xl text-center">{TEXT}</p>
+      <Title text="CONTACT"/>
+      <div className="flex flex-col px-4 items-center md:w-4/5 lg:w-3/4">
+        <p className="text-center text-sm font-sans md:text-base">{TEXT}</p>
         <Contact_Form />
         <Contact_IconsContainer />
       </div>

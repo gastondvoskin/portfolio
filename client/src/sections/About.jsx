@@ -7,13 +7,12 @@ import Title from "../components/Title";
 const About = () => {
   return (
     <SectionContainer name="about" bgNumber={2}>
-      <div className="flex flex-col w-3/5 items-center z-10">
-        <Title text="ABOUT"/>
-
-        <div className="flex flex-col items-center mb-10">
+      <Title text="ABOUT"/>
+      <div className="flex flex-col px-4 items-center md:w-4/5 lg:w-3/4">
+        <div className="flex flex-col items-center">
           {dataDvoskinAbout.map((paragraph, index) => {
             return (
-              <p key={index} className="text-left mb-4 text-sm font-sans md:text-base">
+              <p key={index} className="text-center mb-4 text-sm font-sans md:text-base">
                 {paragraph}
               </p>
             );
