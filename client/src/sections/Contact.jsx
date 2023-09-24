@@ -8,7 +8,6 @@ const Contact = () => {
     "Let's get in touch! I would love to hear from you. Whether you have a  question, feedback, or just want to say hello, feel free to contact me and I'll get back to you as soon as possible. Your message is important to me, and I'm excited to connect with you!";
 
   return (
-
     <SectionContainer name="contact" bgNumber={1}>
       <Title text="CONTACT"/>
       <div className="flex flex-col px-4 items-center md:w-4/5 lg:w-3/4">
@@ -21,6 +20,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-
-
