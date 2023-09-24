@@ -3,6 +3,8 @@ import ProjectDetailModal from "../components/ProjectDetailModal";
 import { useState } from "react";
 import Anchor from "../components/Anchor";
 import Button from "../components/Button";
+import SectionContainer from "../components/SectionContainer";
+import Title from "../components/Title";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -18,49 +20,29 @@ const Projects = () => {
   };
 
   return (
-    <section
-      name="projects"
-      className="flex flex-col w-full items-center pt-24 pb-24 bg-mybg1 dark:bg-mybg1d"
-    >
-      <div className="flex flex-col w-4/5 items-center">
-        <h1 className="mb-16 text-3xl font-bold text-myacc dark:text-myaccd md:text-5xl">PROJECTS</h1>
-        <div className="flex flex-col">
-          {dataDvoskinProjects.map((project, index) => {
-            return (
-              /* left: h2 - image; right: description - buttons */
-              <div
-                key={index}
-                className="grid grid-cols-1 mb-16 items-center lg:grid-cols-2"
-              >
-                {/* h2 - image */}
-                <div>
-                  <h2 className="mb-4 text-2xl font-bold md:text-4xl">{project.name}</h2>
-                  <img
-                    className="my-8 border-4 border-white"
-                    src={project.image}
-                    alt={project.name}
-                  />
-                </div>
+    <SectionContainer name="projects" bgNumber={1}>
+      <Title text="PROJECTS"/>
+      {dataDvoskinProjects.map((project, index) => {
+        return (
+          <div key={index} className="flex flex-col px-4 mb-16 md:mb-20 items-center text-center md:w-4/5 lg:w-3/4">
+            <h2 className="text-2xl font-bold md:text-4xl md:mb-3">{project.name}</h2>
+            <img className="my-2 border-2 border-white" src={project.image} alt={project.name}/>
+            <p className="text-xs font-sans md:text-base md:mb-2">{project.description}</p>
+            <div id="buttons" className="flex flex-row gap-x-2 md:gap-x-6 lg:gap-x-10">
+              {project.deploy && <Anchor href={project.deploy} text="VIEW" />}
+              {project.youtube && <Anchor href={project.youtube} text="OVERVIEW" />}
+              {project.repository && <Anchor href={project.repository} text="REPO" />}
+              {/* <Button text="TECH" onClickHandler={() => openProjectDetail(project)} /> */}
+            </div>
 
-                {/* description - buttons */}
-                <div className="lg:ml-16">
-                  <p className="text-sm font-sans mb-8 md:text-base">{project.description}</p>
-                  {project.deploy && <Anchor href={project.deploy} text="DEPLOY" />}
-                  {project.youtube && <Anchor href={project.youtube} text="OVERVIEW" />}
-                  {project.repository && <Anchor href={project.repository} text="REPOSITORY" />}
-                  <Button text="TECHNOLOGIES" onClickHandler={() => openProjectDetail(project)} />
-                </div>
-              </div>
-            );
-          })}
-          {selectedProject && (
-            <ProjectDetailModal project={selectedProject} onClose={closeProjectDetail} />
-          )}
-        </div>
-      </div>
-
+          </div>
+        );
+      })}
+      {selectedProject && (
+        <ProjectDetailModal project={selectedProject} onClose={closeProjectDetail} />
+      )}
+    </SectionContainer>
       
-    </section>
   );
 };
 

@@ -8,24 +8,11 @@ const dataDvoskinProjects = [
   {
     name: "Vibi",
     description:
-      "Vibi is a startup committed to democratizing access to the first home in Peru. This web is under construction",
-    technologies: [
-      "TypeScript",
-      "React",
-      "NextJS",
-      "Tailwind",
-      "Figma",
-      "NodeJs",
-      "Express",
-      "Prisma",
-    ],
-    tasks: [
-
-    ],
-    deploy: "https://vi-373evpjot-eugeniagramajo-s-team.vercel.app/home",
-    youtube:
-      "",
-    repository: "https://github.com/EugeniaGramajo/vibi",
+      "Vibi is a startup dedicated to democratizing access to first homes in Peru. During my internship at Vibi, I served as a Front-end Developer, responsible for rendering the 'Comprar' section. This section encompasses property listings, their details, and various filters. Please note that this website is currently under construction.",
+    technologies: ["TypeScript", "React", "NextJS", "Tailwind", "Figma", "NodeJs", "Express", "Prisma"],
+    deploy: "https://vibi.vercel.app",
+    youtube: "",
+    repository: "https://github.com/gastondvoskin/vibi",
     image: vibiImg,
   },
 
@@ -33,22 +20,10 @@ const dataDvoskinProjects = [
     name: "Videogames Hub",
     description:
       "Development of an individual full-stack application with the aim of rendering and filtering video games from an API and a proprietary database.",
-    technologies: [
-      "JavaScript",
-      "React",
-      "Redux",
-      "CSS",
-      "NodeJs",
-      "Express",
-      "PostgreSQL",
-      "Sequelize",
-    ],
-    tasks: [
-      "Complete the entire full-stack application individually following the guidelines specified by Soy Henry",
-    ],
+    technologies: ["JavaScript", "React", "Redux", "CSS", "NodeJs", "Express", "PostgreSQL", "Sequelize"],
     deploy: "https://videogameshub.vercel.app/",
     youtube:
-      "https://www.youtube.com/watch?v=nJ4NmMCn320&t=3s&ab_channel=Gast%C3%B3nDvoskin",
+      "https://www.youtube.com/watch?v=nJ4NmMCn320&ab_channel=Gast%C3%B3nDvoskin",
     repository: "https://github.com/gastondvoskin/PI-Videogames",
     image: videogameshubImg,
   },
@@ -57,31 +32,7 @@ const dataDvoskinProjects = [
     name: "Vianda express",
     description:
       "Development of a healthy meal Ecommerce platform that allows customers to filter, add products to their cart, make online purchases, edit their data, access their favorites, and leave reviews. The admin can view statistics, manage orders, and make modifications to the products.",
-    technologies: [
-      "JavaScript",
-      "React",
-      "Redux",
-      "ToolKit",
-      "CSS",
-      "Auth0",
-      "Sweet Alert",
-      "Font Awesome",
-      "NodeJs",
-      "Express",
-      "NodeMailer",
-      "MercadoPago",
-      "Cloudinary",
-      "PostgreSQL",
-      "Sequelize",
-    ],
-    tasks: [
-      "Diagrama E/R",
-      "Desarrollo de diversos EndPoints para el funcionamiento de la app",
-      "Implementacion de Cludinary en los EndPoints necesarios",
-      "Desarrollo de gran parte del Panel Administrativo",
-      "Filtros combinados en el front tanto para el cliente como para el administrador",
-      "Implementacion de Graficos para el administrador con NivoCharts",
-    ],
+    technologies: ["JavaScript", "React", "Redux", "ToolKit", "CSS", "Auth0", "Sweet Alert", "Font Awesome", "NodeJs", "Express", "NodeMailer", "MercadoPago", "Cloudinary", "PostgreSQL", "Sequelize"],
     deploy: "https://viandaexpress.vercel.app/",
     youtube:
       "https://www.youtube.com/watch?v=9LU6qFour2M&ab_channel=SilvioJuarez",
@@ -89,52 +40,27 @@ const dataDvoskinProjects = [
     image: viandaexpressImg,
   },
 
-
-  {
-    name: "Brenda Dvoskin",
-    description:
-      "Front-end development of Brenda Dvoskin's portfolio, the first Argentine woman in becoming Doctor in Law graduated from Harvard Law School",
-    technologies: [
-      "JavaScript",
-      "React",
-      "CSS",
-    ],
-    tasks: [
-      "Complete the entire front-end application",
-    ],
-    deploy: "",
-    youtube:
-      "",
-    repository: "https://github.com/gastondvoskin/Brenda-Dvoskin-Web.git",
-    image: brendadvoskinImg,
-  },
+  // {
+  //   name: "Brenda Dvoskin",
+  //   description:
+  //     "Front-end development of Brenda Dvoskin's portfolio, Doctor in Law graduated from Harvard Law School.",
+  //   technologies: ["JavaScript", "React", "CSS"],
+  //   deploy: "",
+  //   youtube: "",
+  //   repository: "https://github.com/gastondvoskin/Brenda-Dvoskin-Web.git",
+  //   image: brendadvoskinImg,
+  // },
 
   {
     name: "Portfolio",
     description:
-      "This portoflio was developed from scratch by Gastón Dvoskin and Santiago Rovaletti.",
-    technologies: [
-      "JavaScript",
-      "React",
-      "Tailwind",
-      "Font Awesome",
-      "NodeJs",
-      "Express",
-      "NodeMailer",
-      "PostgreSQL",
-      "Sequelize",
-    ],
-    tasks: [
-
-    ],
-    deploy: "https://gaston-dvoskin.vercel.app/",
-    youtube:
-      "",
-    repository: "https://github.com/santirova/Portfolio",
+      "Feel free to explore the repository housing my portfolio and discover the technologies I employed to build it. The portfolio offers a glimpse into my background, including a self-description, a showcase of my projects, the key technologies I utilize, along with my contact information and CV. This project features both a light and dark theme, ensuring a visually appealing experience across all devices with complete responsiveness.",
+    technologies: ["JavaScript", "React", "Tailwind", "Font Awesome", "NodeJs", "Express", "NodeMailer", "PostgreSQL", "Sequelize"],
+    // deploy: "https://gastondvoskin.com/",
+    youtube: "",
+    repository: "https://github.com/gastondvoskin/portfolio",
     image: portfolioImg,
   },
-
-  
 ];
 
 export { dataDvoskinProjects };

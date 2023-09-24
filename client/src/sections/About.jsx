@@ -1,22 +1,18 @@
 import { dataDvoskinAbout } from "../data/dataDvoskin/dataAbout";
 import cvDvoskin from "../assets/CV/Gastón_Dvoskin_Front-end_Developer.pdf";
 import Button from "../components/Button";
+import SectionContainer from "../components/SectionContainer";
+import Title from "../components/Title";
 
 const About = () => {
   return (
-    <section
-      name="about"
-      className="flex flex-col w-full items-center pt-24 pb-24 bg-mybg2 dark:bg-mybg2d"
-    >
-      <div className="flex flex-col w-3/5 items-center">
-        <h1 className="mb-16 text-3xl font-bold text-myacc dark:text-myaccd md:text-5xl">
-          ABOUT
-        </h1>
-
-        <div className="flex flex-col items-center mb-10">
+    <SectionContainer name="about" bgNumber={2}>
+      <Title text="ABOUT"/>
+      <div className="flex flex-col px-4 items-center md:w-4/5 lg:w-3/4">
+        <div className="flex flex-col items-center">
           {dataDvoskinAbout.map((paragraph, index) => {
             return (
-              <p key={index} className="text-left mb-4 text-sm font-sans md:text-base">
+              <p key={index} className="text-center mb-4 text-sm font-sans md:text-base">
                 {paragraph}
               </p>
             );
@@ -27,7 +23,8 @@ const About = () => {
           <Button text="DOWNLOAD CV" type="button" icon="" />
         </a>
       </div>
-    </section>
+    </SectionContainer>
+
   );
 };
 

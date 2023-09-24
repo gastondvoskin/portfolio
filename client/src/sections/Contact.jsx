@@ -1,25 +1,26 @@
-import Form from "../components/Form";
-import ContactIcons from "../components/ContactIcons";
+import Contact_Form from "../components/Contact_Form";
+import Contact_IconsContainer from "../components/Contact_IconsContainer";
+import SectionContainer from "../components/SectionContainer";
+import Title from "../components/Title";
 
 const Contact = () => {
   const TEXT =
     "Let's get in touch! I would love to hear from you. Whether you have a  question, feedback, or just want to say hello, feel free to contact me and I'll get back to you as soon as possible. Your message is important to me, and I'm excited to connect with you!";
 
   return (
-    <section
-      name="contact"
-      className="flex flex-col w-full items-center pt-24 pb-24 bg-mybg1 dark:bg-mybg1d"
-    >
-      <div className="flex flex-col items-center w-4/5 ">
-        <h1 className="mb-16 text-3xl font-bold text-myacc dark:text-myaccd md:text-5xl">
-          CONTACT
-        </h1>
-        <p className="font-sans max-w-3xl text-center">{TEXT}</p>
-        <Form />
-        <ContactIcons />
+
+    <SectionContainer name="contact" bgNumber={1}>
+      <Title text="CONTACT"/>
+      <div className="flex flex-col px-4 items-center md:w-4/5 lg:w-3/4">
+        <p className="text-center text-sm font-sans md:text-base">{TEXT}</p>
+        <Contact_Form />
+        <Contact_IconsContainer />
       </div>
-    </section>
+    </SectionContainer>
   );
 };
 
 export default Contact;
+
+
+
