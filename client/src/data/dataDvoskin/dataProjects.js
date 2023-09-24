@@ -1,6 +1,6 @@
 import videogameshubImg from "../../assets/projectsImages/videogameshubImg.png";
 import viandaexpressImg from "../../assets/projectsImages/viandaexpressImg.png";
-import brendadvoskinImg from "../../assets/projectsImages/brendadvoskinImg.png";
+// import brendadvoskinImg from "../../assets/projectsImages/brendadvoskinImg.png";
 import portfolioImg from "../../assets/projectsImages/portfolioImg.png";
 import vibiImg from "../../assets/projectsImages/vibiImg.png";
 

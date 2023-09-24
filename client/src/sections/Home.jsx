@@ -9,14 +9,14 @@ const Home = () => {
       name="home"
       className="w-full h-screen pt-24 pb-24 bg-mybg1 dark:bg-mybg1d"
     >
-      <div className="flex flex-col w-full h-full justify-center items-center text-center gap-24">        
+      <div className="flex flex-col w-full h-full justify-center items-center text-center gap-24 sm:gap-4 md:gap-32 lg:gap-24">        
         <h2 className="text-2xl md:text-5xl ">Welcome! My name is</h2>
         <div id="nameAndRole">
-          <h1 className="text-6xl mb-2 text-myacc dark:text-myaccd md:text-7xl xl:text-9xl">{NAME}</h1>
+          <h1 className="text-6xl px-2 mb-2 text-myacc dark:text-myaccd md:text-7xl xl:text-9xl">{NAME}</h1>
           <h2 className="text-2xl md:text-4xl xl:text-6xl">{ROLE}</h2>
         </div>
         <Link
-          className="text-2xl px-7 cursor-pointer text-myacc dark:text-myaccd md:text-xl lg:text-3xl xl:text-4xl"
+          className="text-xl cursor-pointer text-myacc dark:text-myaccd md:text-2xl lg:text-3xl xl:text-4xl"
           to="about"
           smooth={true}
           duration={300}
