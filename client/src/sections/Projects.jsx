@@ -23,7 +23,6 @@ const Projects = () => {
     <SectionContainer name="projects" bgNumber={1}>
       <Title text="PROJECTS"/>
       {dataDvoskinProjects.map((project, index) => {
-        
         return (
           <div key={index} className="flex flex-col px-4 mb-16 md:mb-20 items-center text-center md:w-4/5 lg:w-3/4">
             <h2 className="text-2xl font-bold md:text-4xl md:mb-3">{project.name}</h2>

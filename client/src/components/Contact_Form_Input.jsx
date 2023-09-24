@@ -2,7 +2,7 @@ const Contact_Form_Input = ({ Element, name, labelText, value, onChange, placeho
   const sharedAttributes = {
     value,
     onChange,
-    className: "w-full mt-2 px-5 py-2 bg-white text-black text-md border border-gray-300 border-opacity-50 rounded-md shadow-sm dark:bg-mybg1d dark:text-white dark:border-gray-500",
+    className: `w-full mt-1 px-2 py-1 bg-white text-black text-sm border border-gray-300 border-opacity-50 rounded-sm shadow-sm dark:bg-mybg1d dark:text-white dark:border-gray-500 ${Element === "input" ? "" : ""} md:text-base`,
     id: name,
     name,
     placeholder,
@@ -11,14 +11,14 @@ const Contact_Form_Input = ({ Element, name, labelText, value, onChange, placeho
   };
 
   return (
-    <div className={`mb-4 ${Element === "textarea" ? "mt-4" : ""}`}>
-      <label className="text-lg text-black dark:text-white" htmlFor={name}>
+    <div className={`mb-3 ${Element === "textarea" ? "mt-4" : ""}`}>
+      <label className="text-base text-black dark:text-white md:text-lg" htmlFor={name}>
         {labelText}
       </label>
       {Element === "input" ? (
         <input {...sharedAttributes} type="text" />
       ) : (
-        <textarea {...sharedAttributes} rows={4} />
+        <textarea {...sharedAttributes} rows={3} />
       )}
     </div>
   );
