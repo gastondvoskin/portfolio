@@ -8,7 +8,9 @@ const Nav_LinksContainerSmall = ({ NAV_TEXTS, setCurrentSection, currentSection,
         {NAV_TEXTS.map((text, index) => (
           <Nav_Link key={index} to={text} onClick={() => {setCurrentSection(text); handleRenderMenu()}} isCurrent={currentSection === text} />
         ))}
-        <Nav_Link cv={true}/> 
+        <Nav_Link to="cv" mobile={true} /> 
+        <Nav_Link to="linkedin" mobile={true} />
+        <Nav_Link to="github" mobile={true} />
       </div>
     </div>
   );

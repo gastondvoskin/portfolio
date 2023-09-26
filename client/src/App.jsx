@@ -5,7 +5,7 @@ import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 import Technologies from "./sections/Technologies";
-import Phrases from "./sections/Phrases";
+import Quotes from "./sections/Quotes";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Projects />
       <Technologies />
       <Contact />
-      <Phrases />
+      <Quotes />
       <Footer />
     </div>
   );

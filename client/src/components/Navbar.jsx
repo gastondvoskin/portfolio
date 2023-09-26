@@ -23,14 +23,14 @@ const Navbar = () => {
     setRenderedMenu(!renderedMenu);
   };
 
-  const NAV_TEXTS = ["home", "about", "projects", "technologies", "contact"];
+  const NAV_TEXTS = ["home", "about", "projects", "techs", "contact"];
 
   
   return (
     <nav className="flex flex-row justify-between items-center bg-white w-full h-16 text-black fixed border-b-2 border-solid border-black dark:bg-slate-900 dark:text-white z-20 lg:h-20">
       <Nav_Logo id="leftContainer" />
 
-      <div id="rightContainer" className="flex flex-row mr-8 relative lg:mr-8">
+      <div id="rightContainer" className="flex flex-row mr-4 relative lg:mr-8">
         <Nav_LinksContainerSmall setCurrentSection={setCurrentSection} currentSection={currentSection} handleRenderMenu={handleRenderMenu} renderedMenu={renderedMenu} NAV_TEXTS={NAV_TEXTS} className="lg:hidden"/>
         <Nav_LinksContainerLarge setCurrentSection={setCurrentSection} currentSection={currentSection} NAV_TEXTS={NAV_TEXTS} />
         <Nav_Themes darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
