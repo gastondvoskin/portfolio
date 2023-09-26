@@ -10,7 +10,7 @@ const Technologies = () => {
   };
 
   return (
-    <SectionContainer name="technologies" bgNumber={2}>
+    <SectionContainer name="techs" bgNumber={2}>
       <Title text="TECHNOLOGIES"/>
       <div className="flex flex-col px-4 items-center gap-6 text-center md:w-4/5 lg:w-3/4">
         {...arrayOfTechsByType}
