@@ -36,10 +36,3 @@ export default {
   plugins: [],
 }
 
-
-
-/* 
-font-size: 
-section title: 6xl
-p text: xl
-*/
