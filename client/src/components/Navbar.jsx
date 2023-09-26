@@ -23,7 +23,7 @@ const Navbar = () => {
     setRenderedMenu(!renderedMenu);
   };
 
-  const NAV_TEXTS = ["home", "about", "projects", "TECHS", "contact"];
+  const NAV_TEXTS = ["home", "about", "projects", "techs", "contact"];
 
   
   return (
