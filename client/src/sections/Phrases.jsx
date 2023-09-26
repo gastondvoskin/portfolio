@@ -3,7 +3,6 @@ import SectionContainer from "../components/SectionContainer";
 import Title from "../components/Title";
 import { useState } from "react";
 import Button from "../components/Button";
-import { FaRegSurprise } from "react-icons/fa";
 import { BiSolidQuoteLeft, BiSolidQuoteRight } from "react-icons/bi";
 
 
@@ -21,13 +20,13 @@ const Phrases = () => {
   return (
     <SectionContainer name="" bgNumber={2}>
         <Title text="INSPIRING QUOTES"/>
-        <div className="flex flex-col mt-6 px-4 items-center font-sans sm:mt-0 md:mt-6 md:w-4/5 lg:w-3/4">
-            <div className="flex flex-col h-56 sm:h-36 md:h-56">
-                <BiSolidQuoteLeft className="text-2xl text-left lg:text-4xl"  />
-                <span className="text-xl mx-4 md:text-2xl text-center">{randomPhrase.phrase}</span>
-                <BiSolidQuoteRight className="text-2xl ml-auto lg:text-4xl" />
+        <div className="flex flex-col mt-6 px-4 items-center font-sans sm:mt-0 md:mt-6 md:w-3/4 lg:w-1/2">
+            <div className="flex flex-col h-">
+                <BiSolidQuoteLeft className="text-lg text-left lg:text-2xl"  />
+                <span className="text-center mx-auto my-2 text-base md:text-xl">{randomPhrase.phrase}</span>
+                <BiSolidQuoteRight className="text-lg ml-auto lg:text-2xl" />
             </div>    
-            <p className="text-lg mb-6 sm:mb-2 md:mb-6 md:text-xl">Author: {randomPhrase.author}</p>
+            <p className="text-sm my-4 md:mb-6 md:text-base">Author: {randomPhrase.author}</p>
             <Button text="INSPIRE ME" /* icon={<FaRegSurprise />} */ onClickHandler={onClickHandler} />
         </div>
     </SectionContainer>
