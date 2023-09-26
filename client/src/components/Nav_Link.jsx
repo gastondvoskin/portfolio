@@ -7,7 +7,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const Nav_Link = ({ onClick, to, isCurrent, mobile }) => {
   const dataContact = dataDvoskinContact;
-  const sharedProperties = "my-4 cursor-pointer hover:text-myacchover lg:my-auto lg:mx-4 dark:hover:text-myaccdhover";
+  const sharedProperties = "my-4 sm:my-0 md:my-4 cursor-pointer hover:text-myacchover lg:my-auto lg:mx-4 dark:hover:text-myaccdhover";
 
   if (to === "cv") {
     return <a href={cvDvoskin} download className={`${sharedProperties}`}>CV</a>
