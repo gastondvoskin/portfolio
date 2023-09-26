@@ -10,7 +10,7 @@ const Nav_Logo = () => {
           src={dvoskin}
           alt="GASTÓN DVOSKIN"
         />
-        <div className="flex flex-col items-start text-sm md:flex-row lg:text-lg">
+        <div className="flex flex-col items-start text-sm xl:flex-row lg:text-lg">
           <span className="mr-1" >GASTÓN</span>
           <span className="" >DVOSKIN</span>
         </div>
