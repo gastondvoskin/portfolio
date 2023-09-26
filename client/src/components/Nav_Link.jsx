@@ -1,20 +1,33 @@
 import { Link } from "react-scroll";
-import cvDvoskin from "../assets/CV/Gastón_Dvoskin_Front-end_Developer.pdf";
+import cvDvoskin from "../assets/CV/Gastón_Dvoskin_Front-end_Developer.pdf"; 
+import Contact_Icon from "./Contact_Icon";
+import { dataDvoskinContact } from "../data/dataDvoskin/dataContact";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
-const Nav_Link = ({ onClick, to, isCurrent, cv }) => {
-  return cv ? (
-    <a href={cvDvoskin} download className="my-4 cursor-pointer lg:my-auto lg:mx-4">CV</a>
-  ) : (
-    <Link
-      onClick={onClick}
-      className={`my-4 cursor-pointer hover:text-myacchover lg:my-auto lg:mx-4 ${isCurrent ? "text-myacc" : ""} dark:hover:text-myaccdhover`}
-      to={to}
-      smooth={true}
-      duration={300}
-    >
-      {to.toUpperCase()}
-    </Link>
-  );
+const Nav_Link = ({ onClick, to, isCurrent, mobile }) => {
+  const dataContact = dataDvoskinContact;
+  const sharedProperties = "my-4 cursor-pointer hover:text-myacchover lg:my-auto lg:mx-4 dark:hover:text-myaccdhover";
+
+  if (to === "cv") {
+    return <a href={cvDvoskin} download className={`${sharedProperties}`}>CV</a>
+  } else if (to === "github") {
+    return <Contact_Icon href={dataContact.github} Icon={FaGithub} size={mobile ? "40" : "25"} className={`${sharedProperties}`} />
+  } else if (to === "linkedin") {
+    return <Contact_Icon href={dataContact.linkedin} Icon={FaLinkedinIn} size={mobile ? "40" : "25"} className={`${sharedProperties}`} />
+  } else {
+    return (
+      <Link
+        onClick={onClick}
+        className={`${sharedProperties} ${isCurrent ? "text-myacc" : ""}`}
+        to={to}
+        smooth={true}
+        duration={300}
+      >
+        {to?.toUpperCase()}
+      </Link>
+    );
+  }
 };
 
 export default Nav_Link; 

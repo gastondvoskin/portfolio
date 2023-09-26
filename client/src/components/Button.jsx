@@ -1,5 +1,4 @@
 const Button = ({ parent, text, type, icon, onClickHandler }) => {
-  console.log("Parent:", parent);
   return (
     <button
       onClick={onClickHandler}
