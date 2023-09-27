@@ -1,7 +1,6 @@
 import Nav_Logo from "./Nav_Logo"; 
 import Nav_Themes from "./Nav_Themes";
-import Nav_LinksContainerSmall from "./Nav_LinksContainerSmall";
-import Nav_LinksContainerLarge from "./Nav_LinksContainerLarge";
+import Nav_LinksContainer from "./Nav_LinksContainer";
 import Nav_Bars from "./Nav_Bars";
 import { useState } from "react";
 
@@ -31,9 +30,13 @@ const Navbar = () => {
       <Nav_Logo id="leftContainer" />
 
       <div id="rightContainer" className="flex flex-row mr-4 relative lg:mr-8">
-        <Nav_LinksContainerSmall setCurrentSection={setCurrentSection} currentSection={currentSection} handleRenderMenu={handleRenderMenu} renderedMenu={renderedMenu} NAV_TEXTS={NAV_TEXTS} className="lg:hidden"/>
-        <Nav_LinksContainerLarge setCurrentSection={setCurrentSection} currentSection={currentSection} NAV_TEXTS={NAV_TEXTS} />
+        {/* small device */}
+        <Nav_LinksContainer setCurrentSection={setCurrentSection} currentSection={currentSection} handleRenderMenu={handleRenderMenu} renderedMenu={renderedMenu} NAV_TEXTS={NAV_TEXTS} className="lg:hidden" containerClassName={`${renderedMenu ? "fixed" : "hidden"} inset-0 z-10 bg-mybg1 text-3xl dark:bg-mybg2d`} largeDevice={false} clickHandler={(text) => {setCurrentSection(text); handleRenderMenu()}} />
+        {/* large device */}
+        <Nav_LinksContainer setCurrentSection={setCurrentSection} currentSection={currentSection} NAV_TEXTS={NAV_TEXTS} containerClassName="hidden lg:flex" largeDevice={true} clickHandler={(text) => {setCurrentSection(text)}} />
+        {/* light and dark themes */}
         <Nav_Themes darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        {/* bars for small device */}
         <Nav_Bars renderedMenu={renderedMenu} handleRenderMenu={handleRenderMenu} />
       </div>
     </nav>
