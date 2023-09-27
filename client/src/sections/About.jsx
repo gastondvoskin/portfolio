@@ -11,9 +11,9 @@ const About = () => {
       <Title text="ABOUT"/>
       <div className="flex flex-col px-4 items-center md:w-4/5 lg:w-3/4">
         <div className="flex flex-col items-center">
-          {dataDvoskinAbout.map((paragraph, index) => {
+          {dataDvoskinAbout.map((paragraph, index) => 
             <p key={index} className="text-center mb-4 text-sm font-sans md:text-base">{paragraph}</p>
-          })}
+          )}
         </div>
         <a href={cvDvoskin} download>
           <Button text="DOWNLOAD CV" type="button" Icon={BiSolidDownload} />
