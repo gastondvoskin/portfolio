@@ -3,6 +3,7 @@ import cvDvoskin from "../assets/CV/Gastón_Dvoskin_Front-end_Developer.pdf";
 import Button from "../components/Button";
 import SectionContainer from "../components/SectionContainer";
 import Title from "../components/Title";
+import { LuView } from "react-icons/lu"; 
 import { BiSolidDownload } from "react-icons/bi"; 
 
 const About = () => {
@@ -15,6 +16,9 @@ const About = () => {
             <p key={index} className="text-center mb-4 text-sm font-sans md:text-base">{paragraph}</p>
           )}
         </div>
+        <a href={cvDvoskin}>
+          <Button text="VIEW CV" type="button" Icon={LuView} />
+        </a>
         <a href={cvDvoskin} download>
           <Button text="DOWNLOAD CV" type="button" Icon={BiSolidDownload} />
         </a>
