@@ -1,8 +1,6 @@
 import Nav_Logo from "./Nav_Logo"; 
 import Nav_Themes from "./Nav_Themes";
 import Nav_LinksContainer from "./Nav_LinksContainer";
-import Nav_LinksContainerSmall from "./Nav_LinksContainerSmall";
-import Nav_LinksContainerLarge from "./Nav_LinksContainerLarge";
 import Nav_Bars from "./Nav_Bars";
 import { useState } from "react";
 

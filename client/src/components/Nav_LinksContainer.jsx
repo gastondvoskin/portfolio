@@ -1,6 +1,6 @@
 import Nav_Link from "./Nav_Link";
 
-const Nav_LinksContainer = ({ NAV_TEXTS, setCurrentSection, currentSection, handleRenderMenu, renderedMenu, containerClassName, largeDevice, clickHandler }) => {
+const Nav_LinksContainer = ({ NAV_TEXTS, currentSection, containerClassName, largeDevice, clickHandler }) => {
   
   return (
     <div className={containerClassName}>
