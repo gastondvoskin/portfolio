@@ -36,9 +36,9 @@ const Navbar = () => {
         <Nav_LinksContainer setCurrentSection={setCurrentSection} currentSection={currentSection} handleRenderMenu={handleRenderMenu} renderedMenu={renderedMenu} NAV_TEXTS={NAV_TEXTS} className="lg:hidden" containerClassName={`${renderedMenu ? "fixed" : "hidden"} inset-0 z-10 bg-mybg1 text-3xl dark:bg-mybg2d`} largeDevice={false} clickHandler={(text) => {setCurrentSection(text); handleRenderMenu()}} />
         {/* large device */}
         <Nav_LinksContainer setCurrentSection={setCurrentSection} currentSection={currentSection} NAV_TEXTS={NAV_TEXTS} containerClassName="hidden lg:flex" largeDevice={true} clickHandler={(text) => {setCurrentSection(text)}} />
-        {/* <Nav_LinksContainerSmall setCurrentSection={setCurrentSection} currentSection={currentSection} handleRenderMenu={handleRenderMenu} renderedMenu={renderedMenu} NAV_TEXTS={NAV_TEXTS} className="lg:hidden"/> */}
-        {/* <Nav_LinksContainerLarge setCurrentSection={setCurrentSection} currentSection={currentSection} NAV_TEXTS={NAV_TEXTS} /> */}
+        {/* light and dark themes */}
         <Nav_Themes darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        {/* bars for small device */}
         <Nav_Bars renderedMenu={renderedMenu} handleRenderMenu={handleRenderMenu} />
       </div>
     </nav>

@@ -12,9 +12,9 @@ const Nav_LinksContainer = ({ NAV_TEXTS, setCurrentSection, currentSection, hand
             onClick={() => clickHandler(text)} 
             isCurrent={currentSection === text} />
         ))}
-        <Nav_Link to="cv" mobile={true} /> 
-        <Nav_Link to="linkedin" mobile={true} />
-        <Nav_Link to="github" mobile={true} />
+        <Nav_Link to="cv" largeDevice={largeDevice} /> 
+        <Nav_Link to="linkedin" largeDevice={largeDevice} />
+        <Nav_Link to="github" largeDevice={largeDevice} />
       </div>
     </div>
   );
