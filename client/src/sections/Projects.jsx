@@ -2,9 +2,12 @@ import { dataDvoskinProjects } from "../data/dataDvoskin/dataProjects";
 import ProjectDetailModal from "../components/ProjectDetailModal";
 import { useState } from "react";
 import Anchor from "../components/Anchor";
-import Button from "../components/Button";
 import SectionContainer from "../components/SectionContainer";
 import Title from "../components/Title";
+import { SiWebflow } from "react-icons/si";
+import { FaYoutube } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -29,9 +32,9 @@ const Projects = () => {
             <img className="my-2 border-2 border-white" src={project.image} alt={project.name}/>
             <p className="text-xs font-sans md:text-base md:mb-2">{project.description}</p>
             <div id="buttons" className="flex flex-row gap-x-2 md:gap-x-6 lg:gap-x-10">
-              {project.deploy && <Anchor href={project.deploy} text="VIEW" />}
-              {project.youtube && <Anchor href={project.youtube} text="OVERVIEW" />}
-              {project.repository && <Anchor href={project.repository} text="REPO" />}
+              {project.deploy && <Anchor href={project.deploy} text="WEB" Icon={SiWebflow} />}
+              {project.youtube && <Anchor href={project.youtube} text="VIDEO" Icon={FaYoutube} />}
+              {project.repository && <Anchor href={project.repository} text="REPO" Icon={FaGithub} />}
               {/* <Button text="TECH" onClickHandler={() => openProjectDetail(project)} /> */}
             </div>
 
