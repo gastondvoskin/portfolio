@@ -14,7 +14,7 @@ const Contact_IconsContainer = () => {
   const WHATSAPP_URL = `https://wa.me/${dataContact.telephoneNumber}?text=${encodedMessage}`;
 
   return (
-    <section className="flex flex-wrap items-center gap-4 md:gap-8 lg:gap-16">
+    <section className="flex flex-wrap items-center justify-center gap-4 md:gap-8 lg:gap-16">
       <Contact_Icon href={`mailto:${dataContact.gmail}`} Icon={BiLogoGmail} size={74} className="text-red-500 hover:text-red-700 dark:text-red-700 dark:hover:text-red-500" />
       <Contact_Icon href={WHATSAPP_URL} Icon={SiWhatsapp} size={60} className="text-green-600 hover:text-green-700 dark:hover:text-green-400" />
       <Contact_Icon href={dataContact.github} Icon={FaGithub} size={60} className="text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white" />
