@@ -18,12 +18,16 @@ export default {
     extend: {
       colors: {
         // light
-        'mybg1': '#ECECEC', /* light gray */
-        'mybg2': '#D9D9D9', /* light gray */
+        'mybg1': '#d4d4d4', /* light gray */
+        /* 'mybg2': '#D9D9D9', */ /* light gray */
+        'mybg2': '#ECECEC', /* light gray */      /* https://www.color-hex.com/color/ececec */
+
         'mytext': 'black',  /* black */
         /* 'myacc': '#6366f1', */ /* OLD indigo-500 */
-        'myacc': '#3ABBC8', 
+        /* 'myacc': '#3ABBC8',  */ 
+        'myacc': '#2e95a0',
         'myacchover': '#2e95a0', /* https://www.color-hex.com/color/3abbc8 */        
+        'myacchover': '#3ABBC8',              
         
         // dark
         'mybg1d': '#162C41', /* deep blue */
