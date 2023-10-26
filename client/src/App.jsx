@@ -6,6 +6,8 @@ import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 import Technologies from "./sections/Technologies";
 import Quotes from "./sections/Quotes";
+import { inject } from '@vercel/analytics';
+inject();
 
 function App() {
   return (
