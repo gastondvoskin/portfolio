@@ -2,15 +2,19 @@ import Nav_Logo from "./Nav_Logo";
 import Nav_Themes from "./Nav_Themes";
 import Nav_LinksContainer from "./Nav_LinksContainer";
 import Nav_Bars from "./Nav_Bars";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true); 
 
-  const html = document.querySelector("html");
+  useEffect(() => {
+    document.querySelector("html").classList.add("dark"); // Add 'dark' class on component mount
+  }, []);
 
+  
   const toggleDarkMode = () => {
+    const html = document.querySelector("html");
     html.classList.toggle("dark");
     setDarkMode(!darkMode);
   };

@@ -4,12 +4,25 @@ import viandaexpressImg from "../../assets/projectsImages/viandaexpressImg.png";
 import portfolioImg from "../../assets/projectsImages/portfolioImg.png";
 import vibiImg from "../../assets/projectsImages/vibiImg.png";
 import condesImg from "../../assets/projectsImages/condesImg.png";
+import fornielesImg from "../../assets/projectsImages/fornielesImg.png";
 
 const dataDvoskinProjects = [
+
   {
-    name: "Las Condes",
+    name: "Fornieles Lawyers' website",
     description:
-      "Intranet used daily by over 1,000 employees at Las Condes Municipality (Chile), which renders personalized data for each user, supporting the municipality's digital transformation. Since the project is private, I am unable to provide a live demo or repository link. However, I can offer a video showcasing the project's functionalities upon request. I developed and maintained this project while working at the company 'ReadyMind'.",
+      "Website used by Fornieles Lawyers. It enables conversion of contract templates into final documents through form completion, thereby enhancing enterprise productivity. I can offer a video showcasing the project's functionalities upon request. I developed and maintained the front-end of this project while working at the company 'ReadyMind'. Main technologies used in the front-end: TypeScript, React, Redux.",
+    technologies: ["TypeScript", "React", "Redux"],
+    // deploy: "",
+    // youtube: "",
+    // repository: "",
+    image: fornielesImg, 
+  },
+
+  {
+    name: "Las Condes intranet",
+    description:
+      "Intranet used daily by over 1,000 employees at Las Condes Municipality (Chile), which renders personalized data for each user, supporting the municipality's digital transformation. I can offer a video showcasing the project's functionalities upon request. I developed and maintained this project while working at the company 'ReadyMind'. Main technologies used in the front-end: TypeScript, React, SPFx.",
     technologies: ["TypeScript", "React", "SPFx"],
     // deploy: "",
     // youtube: "",
