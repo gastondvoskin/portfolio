@@ -1,4 +1,3 @@
-figma: https://www.figma.com/file/YDfWOSxTOv8HytsBIWfTsZ/maqueta-1?type=design&node-id=1-2&mode=design&t=ORV2CcFY0GCNyXxa-0
 Icons: https://simpleicons.org/
 
 Other projects:
@@ -6,4 +5,3 @@ Other projects:
 - https://github.com/realstoman/react-tailwindcss-portfolio/tree/main
 - https://www.rammaheshwari.com
 - https://github.com/HX-FMontoya/simplefolio
-- https://caferati.me/ 
