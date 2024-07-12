@@ -12,11 +12,11 @@ npm run dev
 
 ## Description
 This is my personal portfolio. It has the following features:
-- Home section with a brief description of myself.
-- Projects section with a list of my projects.
-- Technologies section with a list of the main technologies I have worked with.
-- Contact section with my LinkedIn, GitHub, and email.
-- A greeting message with quotes I love that changes every time the page is reloaded.
+- Sections: Home, About, Projects, Technologies, Contact. 
+- Light and dark mode. 
+- Fully responsive design.
+- A touch of inspiration: quotes I love that change every time the page is reloaded.
+- Links to my CV, LinkedIn, and GitHub.
 
 
 ## Main technologies: 
