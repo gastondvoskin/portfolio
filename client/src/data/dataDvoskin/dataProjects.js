@@ -5,10 +5,23 @@ import viandaexpressImg from "../../assets/projectsImages/viandaexpressImg.png";
 import vibiImg from "../../assets/projectsImages/vibiImg.png";
 import condesImg from "../../assets/projectsImages/condesImg.png";
 import fornielesImg from "../../assets/projectsImages/fornielesImg.png";
+import cuerdosImg from "../../assets/projectsImages/cuerdosImg.png";
 
 const dataDvoskinProjects = [
   {
-    name: "Las Condes intranet",
+    name: "Cuerdos Vocales",
+    description:
+      "Cuerdos Vocales is a vocal group specializing in Argentine folklore. I developed and maintained their website for 10 years, initially using Wix and later transitioning to React. The site has played a key role in showcasing the group's achievements, including participation in the Cosquín Festival with over 10,000 attendees, receiving awards from institutions like the National Arts Fund and the National Music Institute of Argentina, and recording an album with Teresa Parodi and Juan Quintero. Main technologies: TypeScript, React, Tailwind.",
+    technologies: ["TypeScript", "React", "Tailwind"],
+    deploy: "https://cuerdosvocales.com",
+    // youtube: "",
+    // repository: "",
+    image: cuerdosImg,
+  },
+
+
+  {
+    name: "Las Condes",
     description:
       "Intranet used daily by over 1,000 employees at Las Condes Municipality (Chile), which renders personalized data for each user, supporting the municipality's digital transformation. I can offer a video showcasing the project's functionalities upon request. I developed and maintained this project while working at the company 'ReadyMind'. Main technologies used in the front-end: TypeScript, React, SPFx.",
     technologies: ["TypeScript", "React", "SPFx"],
@@ -19,7 +32,7 @@ const dataDvoskinProjects = [
   },
 
   {
-    name: "Fornieles Lawyers' website",
+    name: "Fornieles Lawyers",
     description:
       "Website used by Fornieles Lawyers. It enables conversion of contract templates into final documents through form completion, thereby enhancing enterprise productivity. I can offer a video showcasing the project's functionalities upon request. I developed and maintained the front-end of this project while working at the company 'ReadyMind'. Main technologies used in the front-end: TypeScript, React, Redux.",
     technologies: ["TypeScript", "React", "Redux"],
