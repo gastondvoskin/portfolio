@@ -1,15 +1,38 @@
 import videogameshubImg from "../../assets/projectsImages/videogameshubImg.png";
 import viandaexpressImg from "../../assets/projectsImages/viandaexpressImg.png";
 // import brendadvoskinImg from "../../assets/projectsImages/brendadvoskinImg.png";
-import portfolioImg from "../../assets/projectsImages/portfolioImg.png";
+// import portfolioImg from "../../assets/projectsImages/portfolioImg.png";
 import vibiImg from "../../assets/projectsImages/vibiImg.png";
 import condesImg from "../../assets/projectsImages/condesImg.png";
 import fornielesImg from "../../assets/projectsImages/fornielesImg.png";
+import cuerdosImg from "../../assets/projectsImages/cuerdosImg.png";
 
 const dataDvoskinProjects = [
+  {
+    name: "Cuerdos Vocales",
+    description:
+      "Cuerdos Vocales is a vocal group specializing in Argentine folklore. I developed and maintained their website for 10 years, initially using Wix and later transitioning to React. The site has played a key role in showcasing the group's achievements, including participation in the Cosquín Festival with over 10,000 attendees, receiving awards from institutions like the National Arts Fund and the National Music Institute of Argentina, and recording an album with Teresa Parodi and Juan Quintero. Main technologies: TypeScript, React, Tailwind.",
+    technologies: ["TypeScript", "React", "Tailwind"],
+    deploy: "https://cuerdosvocales.com",
+    // youtube: "",
+    // repository: "",
+    image: cuerdosImg,
+  },
+
 
   {
-    name: "Fornieles Lawyers' website",
+    name: "Las Condes",
+    description:
+      "Intranet used daily by over 1,000 employees at Las Condes Municipality (Chile), which renders personalized data for each user, supporting the municipality's digital transformation. I can offer a video showcasing the project's functionalities upon request. I developed and maintained this project while working at the company 'ReadyMind'. Main technologies used in the front-end: TypeScript, React, SPFx.",
+    technologies: ["TypeScript", "React", "SPFx"],
+    // deploy: "",
+    // youtube: "",
+    // repository: "",
+    image: condesImg,
+  },
+
+  {
+    name: "Fornieles Lawyers",
     description:
       "Website used by Fornieles Lawyers. It enables conversion of contract templates into final documents through form completion, thereby enhancing enterprise productivity. I can offer a video showcasing the project's functionalities upon request. I developed and maintained the front-end of this project while working at the company 'ReadyMind'. Main technologies used in the front-end: TypeScript, React, Redux.",
     technologies: ["TypeScript", "React", "Redux"],
@@ -19,15 +42,28 @@ const dataDvoskinProjects = [
     image: fornielesImg, 
   },
 
+
   {
-    name: "Las Condes intranet",
+    name: "Vianda express",
     description:
-      "Intranet used daily by over 1,000 employees at Las Condes Municipality (Chile), which renders personalized data for each user, supporting the municipality's digital transformation. I can offer a video showcasing the project's functionalities upon request. I developed and maintained this project while working at the company 'ReadyMind'. Main technologies used in the front-end: TypeScript, React, SPFx.",
-    technologies: ["TypeScript", "React", "SPFx"],
-    // deploy: "",
-    // youtube: "",
-    // repository: "",
-    image: condesImg,
+      "Development of a healthy meal Ecommerce platform that allows customers to filter, add products to their cart, make online purchases, edit their data, access their favorites, and leave reviews. The admin can view statistics, manage orders, and make modifications to the products.",
+    technologies: ["JavaScript", "React", "Redux", "ToolKit", "CSS", "Auth0", "Sweet Alert", "Font Awesome", "NodeJs", "Express", "NodeMailer", "MercadoPago", "Cloudinary", "PostgreSQL", "Sequelize"],
+    deploy: "https://viandaexpress.vercel.app/",
+    youtube:
+      "https://www.youtube.com/watch?v=9LU6qFour2M&ab_channel=SilvioJuarez",
+    repository: "https://github.com/gastondvoskin/viandaexpress",
+    image: viandaexpressImg,
+  },
+
+  {
+    name: "Vibi",
+    description:
+      "Vibi is a startup dedicated to democratizing access to first homes in Peru. During my internship at Vibi, I served as a Front-end Developer, responsible for rendering the 'Comprar' section. This section encompasses property listings, their details, and various filters. Please note that this website is currently under construction.",
+    technologies: ["TypeScript", "React", "NextJS", "Tailwind", "Figma", "NodeJs", "Express", "Prisma"],
+    // deploy: "https://vibi.vercel.app",
+    youtube: "",
+    repository: "https://github.com/gastondvoskin/vibi",
+    image: vibiImg,
   },
 
   {
@@ -42,30 +78,6 @@ const dataDvoskinProjects = [
     image: videogameshubImg,
   },
 
-  {
-    name: "Vibi",
-    description:
-      "Vibi is a startup dedicated to democratizing access to first homes in Peru. During my internship at Vibi, I served as a Front-end Developer, responsible for rendering the 'Comprar' section. This section encompasses property listings, their details, and various filters. Please note that this website is currently under construction.",
-    technologies: ["TypeScript", "React", "NextJS", "Tailwind", "Figma", "NodeJs", "Express", "Prisma"],
-    deploy: "https://vibi.vercel.app",
-    youtube: "",
-    repository: "https://github.com/gastondvoskin/vibi",
-    image: vibiImg,
-  },
-
-
-
-  {
-    name: "Vianda express",
-    description:
-      "Development of a healthy meal Ecommerce platform that allows customers to filter, add products to their cart, make online purchases, edit their data, access their favorites, and leave reviews. The admin can view statistics, manage orders, and make modifications to the products.",
-    technologies: ["JavaScript", "React", "Redux", "ToolKit", "CSS", "Auth0", "Sweet Alert", "Font Awesome", "NodeJs", "Express", "NodeMailer", "MercadoPago", "Cloudinary", "PostgreSQL", "Sequelize"],
-    deploy: "https://viandaexpress.vercel.app/",
-    youtube:
-      "https://www.youtube.com/watch?v=9LU6qFour2M&ab_channel=SilvioJuarez",
-    repository: "https://www.github.com/gastondvoskin/PFecommerce11B",
-    image: viandaexpressImg,
-  },
 
   // {
   //   name: "Brenda Dvoskin",
