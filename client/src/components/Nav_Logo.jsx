@@ -1,5 +1,5 @@
 import { animateScroll as scroll } from "react-scroll";
-import dvoskin from "../assets/profileImage/dvoskin.png";
+import dvoskin from "../assets/profileImage/dvoskin4.jpg";
 
 const Nav_Logo = () => {
   return (
