@@ -1,5 +1,6 @@
 import { SiTypescript } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
+import { SiPython } from "react-icons/si";
 
 import { SiReact } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
@@ -20,8 +21,9 @@ import { SiSequelize } from "react-icons/si";
 
 /* array of objects instead of an array of strings to access the names and map an icon, no matter the order of the elements in the array */
 export const LANGUAGES = [
-  { name: "JavaScript", Icon: SiJavascript, className: "text-yellow-500 bg-black" },
-  { name: "TypeScript", Icon: SiTypescript, className: "text-blue-400 bg-black" },
+  { name: "JavaScript", Icon: SiJavascript, className: "text-yellow-500" },
+  { name: "TypeScript", Icon: SiTypescript, className: "text-blue-400" },
+  { name: "Python", Icon: SiPython, className: "text-blue-600 text-blue-600 text-yellow-500" },
 ];
 
 export const FRONT = [
