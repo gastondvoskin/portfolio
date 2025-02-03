@@ -6,6 +6,7 @@ import vibiImg from "../../assets/projectsImages/vibiImg.png";
 import condesImg from "../../assets/projectsImages/condesImg.png";
 import fornielesImg from "../../assets/projectsImages/fornielesImg.png";
 import cuerdosImg from "../../assets/projectsImages/cuerdosImg.png";
+import cenitImg from "../../assets/projectsImages/cenitImg.png";
 
 const dataDvoskinProjects = [
   {
@@ -29,6 +30,17 @@ const dataDvoskinProjects = [
     // youtube: "",
     // repository: "",
     image: condesImg,
+  },
+
+  {
+    name: "CENIT - Bot with AI",
+    description:
+      "Developed a chatbot for CENIT, the leading transportation and logistics company for liquid hydrocarbons in Colombia. Built using OpenAI and the Copilot Studio platform, the chatbot enables users to receive assistance, obtain information about the company's services, and submit inquiries, complaints, claims, and suggestions.",
+    technologies: ["OpenAI", "Copilot Studio Platform"],
+    deploy: "https://cenit-transporte.com/",
+    // youtube: "",
+    // repository: "",
+    image: cenitImg,
   },
 
   {
