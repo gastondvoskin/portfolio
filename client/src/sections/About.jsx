@@ -16,10 +16,10 @@ const About = () => {
             <p key={index} className="text-center mb-4 text-sm font-sans md:text-base">{paragraph}</p>
           )}
         </div>
-        <a href={cvDvoskin}>
+        <a href={cvDvoskin} target="_blank" rel="noreferrer">
           <Button text="VIEW CV" type="button" Icon={LuView} />
         </a>
-        <a href={cvDvoskin} download>
+        <a href={cvDvoskin} download target="_blank" rel="noreferrer">
           <Button text="DOWNLOAD CV" type="button" Icon={BiSolidDownload} />
         </a>
       </div>
