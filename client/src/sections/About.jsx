@@ -3,7 +3,7 @@ import cvDvoskin from "../assets/CV/Gastón_Dvoskin_Front-end_Developer.pdf";
 import Button from "../components/Button";
 import SectionContainer from "../components/SectionContainer";
 import Title from "../components/Title";
-import { LuView } from "react-icons/lu"; 
+import { IoMdOpen } from "react-icons/io";
 import { BiSolidDownload } from "react-icons/bi"; 
 
 const About = () => {
@@ -17,7 +17,7 @@ const About = () => {
           )}
         </div>
         <a href={cvDvoskin} target="_blank" rel="noreferrer">
-          <Button text="VIEW CV" type="button" Icon={LuView} />
+          <Button text="VIEW CV" type="button" Icon={IoMdOpen} />
         </a>
         <a href={cvDvoskin} download target="_blank" rel="noreferrer">
           <Button text="DOWNLOAD CV" type="button" Icon={BiSolidDownload} />
