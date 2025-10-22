@@ -1,5 +1,5 @@
 import { dataDvoskinAbout } from "../data/dataDvoskin/dataAbout";
-import cvDvoskin from "../assets/CV/Gastón Dvoskin - Front-end Developer - Resume (EN).pdf";
+import cvDvoskin from "../assets/CV/Gastón Dvoskin - Frontend Developer - CV (EN).pdf";
 import Button from "../components/Button";
 import SectionContainer from "../components/SectionContainer";
 import Title from "../components/Title";

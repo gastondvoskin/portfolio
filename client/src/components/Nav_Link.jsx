@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import cvDvoskin from "../assets/CV/Gastón Dvoskin - Front-end Developer - Resume (EN).pdf";
+import cvDvoskin from "../assets/CV/Gastón Dvoskin - Frontend Developer - CV (EN).pdf";
 import Contact_Icon from "./Contact_Icon";
 import { dataDvoskinContact } from "../data/dataDvoskin/dataContact";
 import { FaSquareGithub } from "react-icons/fa6";
