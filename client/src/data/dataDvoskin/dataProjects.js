@@ -7,16 +7,38 @@ import condesImg from "../../assets/projectsImages/condesImg.png";
 import fornielesImg from "../../assets/projectsImages/fornielesImg.png";
 import cuerdosImg from "../../assets/projectsImages/cuerdosImg.png";
 import cenitImg from "../../assets/projectsImages/cenitImg.png";
+import pomodoroAppImg from "../../assets/projectsImages/pomodoroAppImg.png";
+import aiChatbotDemoImg from "../../assets/projectsImages/aiChatbotDemoImg.png";
+import patientManagerImg from "../../assets/projectsImages/patientManagerImg.png";
+import colivingBaImg from "../../assets/projectsImages/colivingBaImg.png";
+import readymindPowerPlatformImg from "../../assets/projectsImages/readymindPowerPlatformImg.png";
 
 const dataDvoskinProjects = [
   {
+    name: "Readymind Power Platform",
+    description:
+      "Implemented the front-end of the corporate page for Readymind focused on Microsoft Power Platform services. It highlights value proposition, service pillars, and calls to action with a modern, conversion-oriented design. This site helps the company to showcase their services and attract new clients.",
+    technologies: ["JavaScript", "Astro"],
+    image: readymindPowerPlatformImg,
+  },
+
+  {
+    name: "AI Chatbot Demo",
+    description:
+      "Developed an interactive web chatbot demo that leverages the OpenAI API to enable conversational question-and-answer functionality, with support for uploading files such as PDFs and images to provide contextual responses. This tool is intended to showcase potential applications for Readymind clients.",
+    technologies: ["TypeScript", "React", "NextJS", "OpenAI", "Tailwind"],
+    deploy: "https://ai-playground-demo.vercel.app/multi-turn",
+    image: aiChatbotDemoImg,
+  },
+
+  {
     name: "Cuerdos Vocales",
     description:
-      "Cuerdos Vocales is a vocal group specializing in Argentine folklore. I developed and maintained their website for 10 years, initially using Wix and later transitioning to React. The site has played a key role in showcasing the group's achievements, including participation in the Cosquín Festival with over 10,000 attendees, receiving awards from institutions like the National Arts Fund and the National Music Institute of Argentina, and recording an album with Teresa Parodi and Juan Quintero. Main technologies: TypeScript, React, Tailwind.",
+      "Developed and maintained Cuerdos Vocales site for 4 years. The site helped with the vocal group's digital presence and highlights their major achievements: performing at the Cosquín Festival (10,000+ attendees), winning awards from the National Arts Fund and National Music Institute, and recording with Teresa Parodi and Juan Quintero.",
     technologies: ["TypeScript", "React", "Tailwind"],
     deploy: "https://cuerdosvocales.com",
     // youtube: "",
-    // repository: "",
+    repository: "https://github.com/gastondvoskin/cuerdos-vocales",
     image: cuerdosImg,
   },
 
@@ -24,7 +46,7 @@ const dataDvoskinProjects = [
   {
     name: "Las Condes",
     description:
-      "Intranet used daily by over 1,000 employees at Las Condes Municipality (Chile), which renders personalized data for each user, supporting the municipality's digital transformation. I can offer a video showcasing the project's functionalities upon request. I developed and maintained this project while working at the company 'ReadyMind'. Main technologies used in the front-end: TypeScript, React, SPFx.",
+      "Developed the front-end of the intranet used daily by over 1,000 employees at Las Condes Municipality (Chile), which renders personalized data for each user, supporting the municipality's digital transformation. I developed and maintained this project for Readymind's client.",
     technologies: ["TypeScript", "React", "SPFx"],
     // deploy: "",
     // youtube: "",
@@ -44,21 +66,18 @@ const dataDvoskinProjects = [
   },
 
   {
-    name: "Fornieles Lawyers",
+    name: "Patient Manager",
     description:
-      "Website used by Fornieles Lawyers. It enables conversion of contract templates into final documents through form completion, thereby enhancing enterprise productivity. I can offer a video showcasing the project's functionalities upon request. I developed and maintained the front-end of this project while working at the company 'ReadyMind'. Main technologies used in the front-end: TypeScript, React, Redux.",
-    technologies: ["TypeScript", "React", "Redux"],
-    // deploy: "",
-    // youtube: "",
-    // repository: "",
-    image: fornielesImg, 
+      "Implemented a responsive dashboard for managing patient records through a card-based UI. This project was developed during a 3 days challenge.",
+    technologies: ["TypeScript", "React", "Tailwind"],
+    deploy: "https://light-it-challenge-front.vercel.app/",
+    image: patientManagerImg,
   },
-
 
   {
     name: "Vianda express",
     description:
-      "Development of a healthy meal Ecommerce platform that allows customers to filter, add products to their cart, make online purchases, edit their data, access their favorites, and leave reviews. The admin can view statistics, manage orders, and make modifications to the products.",
+      "Led the front-end team of a healthy meal Ecommerce platform that allows customers to filter, add products to their cart, make online purchases, edit their data, access their favorites, and leave reviews. The admin can view statistics, manage orders, and make modifications to the products.",
     technologies: ["JavaScript", "React", "Redux", "ToolKit", "CSS", "Auth0", "Sweet Alert", "Font Awesome", "NodeJs", "Express", "NodeMailer", "MercadoPago", "Cloudinary", "PostgreSQL", "Sequelize"],
     deploy: "https://viandaexpress.vercel.app/",
     youtube:
@@ -70,7 +89,7 @@ const dataDvoskinProjects = [
   {
     name: "Vibi",
     description:
-      "Vibi is a startup dedicated to democratizing access to first homes in Peru. During my internship at Vibi, I served as a Front-end Developer, responsible for rendering the 'Comprar' section. This section encompasses property listings, their details, and various filters. Please note that this website is currently under construction.",
+      "Developed the filters and main pages of Vibi, a startup dedicated to democratizing access to first homes in Peru. During my internship at Vibi, I served as a Front-end Developer, responsible for rendering the 'Comprar' section. This section encompasses property listings, their details, and various filters. Please note that this website is currently under construction.",
     technologies: ["TypeScript", "React", "NextJS", "Tailwind", "Figma", "NodeJs", "Express", "Prisma"],
     // deploy: "https://vibi.vercel.app",
     youtube: "",
@@ -79,9 +98,37 @@ const dataDvoskinProjects = [
   },
 
   {
+    name: "Coliving BA",
+    description:
+      "Developed the MVP of a property detail experience for a coliving offering in Buenos Aires, including amenities, occupancy details, and photo gallery sections. The page goal is to migrate from an Airbnb business model to a coliving business model.",
+    technologies: ["JavaScript", "React", "Tailwind"],
+    image: colivingBaImg,
+  },
+
+  {
+    name: "Fornieles Lawyers",
+    description:
+      "Implemented a web app used by Fornieles Lawyers, a Readymind client. It enables conversion of contract templates into final documents through form completion, thereby enhancing enterprise productivity.",
+    technologies: ["TypeScript", "React", "Redux"],
+    // deploy: "",
+    // youtube: "",
+    // repository: "",
+    image: fornielesImg, 
+  },
+
+
+  {
+    name: "Pomodoro App",
+    description:
+      "Implemented a Pomodoro App with React Native, as part of a PoC for Readymind.",
+    technologies: ["TypeScript", "React Native", "Expo"],
+    image: pomodoroAppImg,
+  },
+
+  {
     name: "Videogames Hub",
     description:
-      "Development of an individual full-stack application with the aim of rendering and filtering video games from an API and a proprietary database.",
+      "Developed an individual full-stack application with the aim of rendering and filtering video games from an API and a proprietary database.",
     technologies: ["JavaScript", "React", "Redux", "CSS", "NodeJs", "Express", "PostgreSQL", "Sequelize"],
     deploy: "https://videogameshub.vercel.app/",
     youtube:

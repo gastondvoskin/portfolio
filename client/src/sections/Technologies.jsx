@@ -1,4 +1,4 @@
-import { LANGUAGES, FRONT, BACK } from "../data/dataDvoskin/dataTechnologies";
+import { LANGUAGES, FRONT, BACK, AI } from "../data/dataDvoskin/dataTechnologies";
 import SectionContainer from "../components/SectionContainer";
 import Title from "../components/Title";
 import Techs_Row from "../components/Techs_Row";
@@ -12,6 +12,7 @@ const Technologies = () => {
         <Techs_Row type="Languages" techsByType={LANGUAGES} />
         <Techs_Row type="Front" techsByType={FRONT} />
         <Techs_Row type="Back" techsByType={BACK} />
+        <Techs_Row type="AI" techsByType={AI} />
       </div>
     </SectionContainer>
   );

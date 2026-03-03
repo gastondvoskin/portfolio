@@ -1,6 +1,8 @@
 import { SiTypescript } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
 import { SiPython } from "react-icons/si";
+import { SiOpenai } from "react-icons/si";
+import { RiCursorFill } from "react-icons/ri";
 
 import { SiReact } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
@@ -43,6 +45,11 @@ export const BACK = [
   // { name: "Prisma", Icon: SiPrisma, className: "text-gray-900 dark:text-gray-200" },
   /* { name: "SQLite", Icon: SiSqlite }, */
   // { name: "PostgreSQL", Icon: SiPostgresql, className: "text-blue-700 dark:text-blue-400" },
+];
+
+export const AI = [
+  { name: "OpenAI", Icon: SiOpenai, className: "text-black dark:text-white" },
+  { name: "Cursor", Icon: RiCursorFill, className: "text-blue-500" },
 ];
 
 // Databases: ["PostgreSQL"];
