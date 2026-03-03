@@ -7,8 +7,29 @@ import condesImg from "../../assets/projectsImages/condesImg.png";
 import fornielesImg from "../../assets/projectsImages/fornielesImg.png";
 import cuerdosImg from "../../assets/projectsImages/cuerdosImg.png";
 import cenitImg from "../../assets/projectsImages/cenitImg.png";
+import pomodoroAppImg from "../../assets/projectsImages/pomodoroAppImg.png";
+import aiChatbotDemoImg from "../../assets/projectsImages/aiChatbotDemoImg.png";
+import patientManagerImg from "../../assets/projectsImages/patientManagerImg.png";
+import colivingBaImg from "../../assets/projectsImages/colivingBaImg.png";
+import readymindPowerPlatformImg from "../../assets/projectsImages/readymindPowerPlatformImg.png";
 
 const dataDvoskinProjects = [
+  {
+    name: "Readymind Power Platform",
+    description:
+      "Corporate page for Readymind focused on Microsoft Power Platform services. It highlights value proposition, service pillars, and calls to action with a modern, conversion-oriented design.",
+    technologies: ["JavaScript", "Astro"],
+    image: readymindPowerPlatformImg,
+  },
+
+  {
+    name: "AI Chatbot Demo",
+    description:
+      "Web chatbot demo that supports conversational Q&A with context from uploaded files such as PDFs and images. It is designed to let users ask follow-up questions and receive grounded responses in a clean messaging interface.",
+    technologies: ["TypeScript", "React", "NextJS", "OpenAI", "Tailwind"],
+    image: aiChatbotDemoImg,
+  },
+
   {
     name: "Cuerdos Vocales",
     description:
@@ -54,6 +75,13 @@ const dataDvoskinProjects = [
     image: fornielesImg, 
   },
 
+  {
+    name: "Patient Manager",
+    description:
+      "Responsive dashboard for managing patient records through a card-based UI. The interface is built to quickly browse profiles and streamline administrative tasks for healthcare teams. This project was developed for a 3 days challenge.",
+    technologies: ["TypeScript", "React", "Tailwind"],
+    image: patientManagerImg,
+  },
 
   {
     name: "Vianda express",
@@ -76,6 +104,22 @@ const dataDvoskinProjects = [
     youtube: "",
     repository: "https://github.com/gastondvoskin/vibi",
     image: vibiImg,
+  },
+
+  {
+    name: "Coliving BA",
+    description:
+      "MVP of a property detail experience for a coliving offering in Buenos Aires, including amenities, occupancy details, and photo gallery sections. The page emphasizes readability and clear booking-oriented information hierarchy.",
+    technologies: ["JavaScript", "React", "Tailwind"],
+    image: colivingBaImg,
+  },
+
+  {
+    name: "Pomodoro App",
+    description:
+      "Mobile Pomodoro timer designed to support deep work sessions with a simple and focused interface. It includes customizable focus minutes and a visual countdown experience optimized for day-to-day productivity.",
+    technologies: ["TypeScript", "React Native", "Expo"],
+    image: pomodoroAppImg,
   },
 
   {
